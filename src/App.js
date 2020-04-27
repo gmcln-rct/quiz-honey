@@ -2,6 +2,7 @@ import React from 'react';
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answer from './components/Answer';
+import './reset.css';
 import './App.css';
 
 function App() {
