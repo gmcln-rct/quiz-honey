@@ -1,7 +1,7 @@
 import React from 'react';
 import Progress from './components/Progress';
 import Question from './components/Question';
-import Answer from './components/Answer';
+import Answers from './components/Answers';
 import './reset.css';
 import './App.css';
 
@@ -10,7 +10,7 @@ function App() {
     <div className="container">
       <Progress total="3" current="1" />
       <Question question="What is React?" />
-      <Answer letter="A" answer="Framework" />
+      <Answers />
 
     </div>
   );

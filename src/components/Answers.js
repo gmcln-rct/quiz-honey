@@ -5,7 +5,9 @@ export default function Answers(props) {
     return (
         <>
         <Answer letter="A" answer="Framework" />
-        <Answer letter="B" answer="Librart" />
+        <Answer letter="B" answer="Library" />
+        <Answer letter="C" answer="Dog" />
+        <Answer letter="D" answer="Cat" />
         </>
     );
 }
