@@ -11,6 +11,7 @@ function App() {
       <Progress total="3" current="1" />
       <Question question="What is React?" />
       <Answers />
+      <button className="btn btn-primary"> Confirm and continue</button>
 
     </div>
   );
