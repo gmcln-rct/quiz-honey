@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answers from './components/Answers';
@@ -6,6 +7,9 @@ import './reset.css';
 import './App.css';
 
 function App() {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [currentAnswer, setAnswer] = useState('');
+
   const questions = [
     {
       id: 1,
@@ -39,13 +43,13 @@ function App() {
   ];
 
   // eslint-disable-next-line
-  const question = questions[0];
+  const question = questions[currentQuestion];
 
   return (
     <div className="container">
       <Progress total="3" current="1" />
       <Question question={question.question}/>
-      <Answers question={question.question} />
+      <Answers question={question} currentAnswer={currentAnswer} />
       <button className="btn btn-primary"> Confirm and continue</button>
 
     </div>
