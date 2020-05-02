@@ -38,13 +38,14 @@ function App() {
     },
   ];
 
+  // eslint-disable-next-line
   const question = questions[0];
 
   return (
     <div className="container">
       <Progress total="3" current="1" />
-      <Question question="What is React?" />
-      <Answers />
+      <Question question={question.question}/>
+      <Answers question={question.question} />
       <button className="btn btn-primary"> Confirm and continue</button>
 
     </div>
