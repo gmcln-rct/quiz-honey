@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [currentAnswer, setAnswer] = useState('');
+  const [currentAnswer, setCurrentAnswer] = useState('');
 
   const questions = [
     {
@@ -44,6 +44,10 @@ function App() {
 
   // eslint-disable-next-line
   const question = questions[currentQuestion];
+
+  const handleClick = e => {
+    setCurrentAnswer(e.target.value)
+  }
 
   return (
     <div className="container">
