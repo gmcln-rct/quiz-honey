@@ -8,7 +8,7 @@ export default function Answer(props) {
     }
 
     return (
-        <button value={props.letter} className={classes.join(' ')}>
+        <button value={props.letter} className={classes.join(' ')} onClick={prosps.handleClick}>
             <span className="letter">
                 {props.letter}. {props.answer}
             </span>

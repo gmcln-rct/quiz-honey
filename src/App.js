@@ -47,13 +47,16 @@ function App() {
 
   const handleClick = e => {
     setCurrentAnswer(e.target.value)
-  }
+  };
 
   return (
     <div className="container">
       <Progress total="3" current="1" />
       <Question question={question.question}/>
-      <Answers question={question} currentAnswer={currentAnswer} />
+      <Answers 
+        question={question} 
+        currentAnswer={currentAnswer} 
+        handleClick={handleClick}/>
       <button className="btn btn-primary"> Confirm and continue</button>
 
     </div>
