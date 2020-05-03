@@ -49,9 +49,14 @@ function App() {
     setCurrentAnswer(e.target.value)
   };
 
+  const next = () => {
+    const answer = {questionId:question.id, answer: currentAnswer};
+
+  }
+
   return (
     <div className="container">
-      <Progress total="3" current="1" />
+      <Progress total={questions.length} current={currentQuestion + 1} />
       <Question question={question.question}/>
       <Answers 
         question={question} 
