@@ -10,7 +10,7 @@ function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [currentAnswer, setCurrentAnswer] = useState('');
   const [answers, setAnswers] = useState([]);
-  const [error, setErrors] = useState('');
+  const [error, setError] = useState('');
 
   const questions = [
     {
@@ -52,8 +52,10 @@ function App() {
   };
 
   const next = () => {
-    const answer = {questionId:question.id, answer: currentAnswer};
-    Answers.phsh(answer);
+    const answer = {questionId: question.id, answer: currentAnswer};
+    answers.push(answer);
+    setAnswers(answers);
+    setCurrentAnswer('');
   }
 
   return (
