@@ -12,7 +12,6 @@ export default function Answer(props) {
             <span className="letter">
                 {props.letter}. {props.answer}
             </span>
-
         </button>
     );
 }
