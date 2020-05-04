@@ -6,7 +6,7 @@ import Answers from './components/Answers';
 import './reset.css';
 import './App.css';
 
-function App() {
+export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [currentAnswer, setCurrentAnswer] = useState('');
   const [answers, setAnswers] = useState([]);
@@ -56,7 +56,7 @@ function App() {
       return;
     }
 
-    return <div className="error"> </div>
+    return <div className="error"> </div>;
   }
 
   const next = () => {
@@ -75,6 +75,7 @@ function App() {
     <div className="container">
       <Progress total={questions.length} current={currentQuestion + 1} />
       <Question question={question.question}/>
+      {renderError()}
       <Answers 
         question={question} 
         currentAnswer={currentAnswer} 
@@ -83,6 +84,5 @@ function App() {
 
     </div>
   );
-}
+};
 
-export default App;
