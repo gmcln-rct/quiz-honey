@@ -56,6 +56,11 @@ function App() {
     answers.push(answer);
     setAnswers(answers);
     setCurrentAnswer('');
+
+    if (currentQuestion + 1 < questions.length) {
+      setCurrentQuestion (currentQuestion + 1);
+      return;
+    }
   }
 
   return (
@@ -66,7 +71,7 @@ function App() {
         question={question} 
         currentAnswer={currentAnswer} 
         handleClick={handleClick}/>
-      <button className="btn btn-primary"> Confirm and continue</button>
+      <button className="btn btn-primary" onClick={next}> Confirm and continue</button>
 
     </div>
   );
