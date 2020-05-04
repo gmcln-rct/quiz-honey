@@ -51,6 +51,14 @@ function App() {
     setCurrentAnswer(e.target.value)
   };
 
+  const renderError = () => {
+    if (!error) {
+      return;
+    }
+
+    return <div className="error"> </div>
+  }
+
   const next = () => {
     const answer = {questionId: question.id, answer: currentAnswer};
     answers.push(answer);
