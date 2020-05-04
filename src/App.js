@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answers from './components/Answers';
-import './reset.css';
+// import './reset.css';
 import './App.css';
 
 export default function App() {
