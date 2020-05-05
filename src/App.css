@@ -12,22 +12,22 @@
     background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
 }
 
 h1,
 h2 {
-    margin: 10px;
+    margin: 1vmin;
 }
 
 .answer {
-    position: relative;
-    height: 2rem;
-    padding: 5px 10px 5px 45px;
-    border: 1px solid #fff;
+    /* position: relative; */
+    /* height: 2rem; */
     width: 610px;
-    text-align: left;
     margin-top: 10px;
+    /* padding: 5px 5px 5px 45px; */
+    padding: 1vmin;
+    border: 1px solid #fff;
+    text-align: left;
     font-size: 22px;
     cursor: pointer;
     transition: ease-in-out, width 0.35s ease-in-out;

@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answers from './components/Answers';
-// import './reset.css';
+import './reset.css';
 import './App.css';
 
 export default function App() {
@@ -63,8 +63,10 @@ export default function App() {
     const answer = {questionId: question.id, answer: currentAnswer};
 
     if (!currentAnswer) {
-      setError('Please select an answer.');
+      setError('Please select an option.');
+      return;
     }
+    
     answers.push(answer);
     setAnswers(answers);
     setCurrentAnswer('');
