@@ -61,6 +61,10 @@ export default function App() {
 
   const next = () => {
     const answer = {questionId: question.id, answer: currentAnswer};
+
+    if (!currentAnswer) {
+      setError('Please select an answer.');
+    }
     answers.push(answer);
     setAnswers(answers);
     setCurrentAnswer('');
