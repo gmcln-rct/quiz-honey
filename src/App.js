@@ -9,6 +9,7 @@ import './App.css';
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [currentAnswer, setCurrentAnswer] = useState('');
+  const [showResultes, setShowResults] = useState(false);
   const [answers, setAnswers] = useState([]);
   const [error, setError] = useState('');
 
@@ -48,7 +49,8 @@ export default function App() {
   const question = questions[currentQuestion];
 
   const handleClick = e => {
-    setCurrentAnswer(e.target.value)
+    setCurrentAnswer(e.target.value);
+    setErrors('');
   };
 
   const renderError = () => {
