@@ -80,7 +80,11 @@ export default function App() {
   }
 
   if (showResults) {
-
+    return (
+      <div className="container results">
+        <h2>Results</h2>
+      </div>
+    )
   } else {
 
     return (
@@ -92,7 +96,7 @@ export default function App() {
           question={question} 
           currentAnswer={currentAnswer} 
           handleClick={handleClick}/>
-          
+
         <button className="btn btn-primary" onClick={next}>
           Confirm and continue
           </button>
