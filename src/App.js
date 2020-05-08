@@ -92,7 +92,10 @@ export default function App() {
           question={question} 
           currentAnswer={currentAnswer} 
           handleClick={handleClick}/>
-        <button className="btn btn-primary" onClick={next}> Confirm and continue</button>
+          
+        <button className="btn btn-primary" onClick={next}>
+          Confirm and continue
+          </button>
   
       </div>
     );
