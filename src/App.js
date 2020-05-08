@@ -9,7 +9,7 @@ import './App.css';
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [currentAnswer, setCurrentAnswer] = useState('');
-  const [showResultes, setShowResults] = useState(false);
+  const [showResults, setShowResults] = useState(false);
   const [answers, setAnswers] = useState([]);
   const [error, setError] = useState('');
 
@@ -79,18 +79,24 @@ export default function App() {
     }
   }
 
-  return (
-    <div className="container">
-      <Progress total={questions.length} current={currentQuestion + 1} />
-      <Question question={question.question}/>
-      {renderError()}
-      <Answers 
-        question={question} 
-        currentAnswer={currentAnswer} 
-        handleClick={handleClick}/>
-      <button className="btn btn-primary" onClick={next}> Confirm and continue</button>
+  if (showResults) {
 
-    </div>
-  );
+  } else {
+
+    return (
+      <div className="container">
+        <Progress total={questions.length} current={currentQuestion + 1} />
+        <Question question={question.question}/>
+        {renderError()}
+        <Answers 
+          question={question} 
+          currentAnswer={currentAnswer} 
+          handleClick={handleClick}/>
+        <button className="btn btn-primary" onClick={next}> Confirm and continue</button>
+  
+      </div>
+    );
+  }
+
 };
 
