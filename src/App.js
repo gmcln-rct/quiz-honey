@@ -77,7 +77,9 @@ export default function App() {
       setCurrentQuestion (currentQuestion + 1);
       return;
     }
-  }
+
+    setShowResults(true);
+  };
 
   if (showResults) {
     return (
