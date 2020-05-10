@@ -85,6 +85,9 @@ export default function App() {
     return (
       <div className="container results">
         <h2>Results</h2>
+        <button className="btn btn-primary" onClick={restart}>
+          Restart
+          </button>
       </div>
     )
   } else {
