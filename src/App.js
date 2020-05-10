@@ -62,13 +62,15 @@ export default function App() {
 
   const renderResultsData = () => {
     return answers.map( answer => {
-      const question = questions.find( question => question.id === answer.questionId
+      const question = questions.find(
+        question => question.id === answer.questionId
         );
 
-        return 
+        return (
           <div key={question.id}>
             {question.question}
-          </div>;
+          </div>
+        )
         });
 
   };
@@ -104,6 +106,7 @@ export default function App() {
     return (
       <div className="container results">
         <h2>Results</h2>
+          {renderResultsData}
         <button className="btn btn-primary" onClick={restart}>
           Restart
           </button>
