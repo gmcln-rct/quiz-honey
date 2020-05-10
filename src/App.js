@@ -60,6 +60,10 @@ export default function App() {
     return <div className="error"> </div>;
   }
 
+  const renderResultMark = (question,answer) => {
+    
+  }
+
   const renderResultsData = () => {
     return answers.map( answer => {
       const question = questions.find(
@@ -106,7 +110,9 @@ export default function App() {
     return (
       <div className="container results">
         <h2>Results</h2>
-          {renderResultsData}
+        <ul>
+          {renderResultsData()}
+        </ul>
         <button className="btn btn-primary" onClick={restart}>
           Restart
           </button>
