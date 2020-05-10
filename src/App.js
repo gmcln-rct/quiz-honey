@@ -61,7 +61,10 @@ export default function App() {
   }
 
   const renderResultMark = (question,answer) => {
-    
+    if (question.correct_answer === answer.answer) {
+      return <span className="correct">Correct</span>
+    } 
+    return <span className="failed">Failure</span> 
   }
 
   const renderResultsData = () => {
