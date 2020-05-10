@@ -62,9 +62,9 @@ export default function App() {
 
   const renderResultMark = (question,answer) => {
     if (question.correct_answer === answer.answer) {
-      return <span className="correct">Correct</span>
+      return <span className="correct">Guessed Correctly</span>
     } 
-    return <span className="failed">Failure</span> 
+    return <span className="failed">Utter Failure</span> 
   }
 
   const renderResultsData = () => {
@@ -75,7 +75,7 @@ export default function App() {
 
         return (
           <div key={question.id}>
-            {question.question}
+            {question.question} | {renderResultsData(question,answer)}
           </div>
         )
         });
