@@ -50,7 +50,7 @@ export default function App() {
 
   const handleClick = e => {
     setCurrentAnswer(e.target.value);
-    setErrors('');
+    setError('');
   };
 
   const renderError = () => {
