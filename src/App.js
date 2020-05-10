@@ -57,8 +57,27 @@ export default function App() {
     if (!error) {
       return;
     }
-
     return <div className="error"> </div>;
+  }
+
+  const renderResultsData = () => {
+    return answers.map( answer => {
+      const question = questions.find( question => question.id === answer.questionId
+        );
+
+        return 
+          <div key={question.id}>
+            {question.question}
+          </div>;
+        });
+
+  };
+
+  const restart = () => {
+    setAnswers([]);
+    setCurrentAnswer('');
+    setCurrentQuestion(0);
+    setShowResults(false);
   }
 
   const next = () => {
