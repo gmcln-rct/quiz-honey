@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Question(props) {
     return (
-        <h1>{props.question}</h1>
+        <h1 className="question-text">{props.question}</h1>
     );
 }

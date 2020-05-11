@@ -21,10 +21,15 @@
 
 }
 
+.question-text {
+    font-family: 'Quicksand', sans-serif;
+
+}
+
 h2.progress-header {
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
-    color: red;
+    color: #ffc107;
 }
 
 
@@ -34,16 +39,15 @@ h2 {
 }
 
 .answer {
-    /* position: relative; */
-    /* height: 2rem; */
     width: 90vw;
     max-width: 610px;
     margin-top: 10px;
-    /* padding: 5px 5px 5px 45px; */
     padding: 1vmin;
-    border: 1px solid #fff;
-    text-align: left;
+
     font-size: 22px;
+    text-align: left;
+    border: 1px solid #fff;
+    border-radius: 10px;
     cursor: pointer;
     transition: ease-in-out, width 0.35s ease-in-out;
 }
@@ -85,11 +89,13 @@ h2 {
     top: 0;
     padding: 5px;
     left: 0;
-    
+
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #4f4c4c;
+
+    
 }
 
 .btn {
