@@ -9,6 +9,10 @@ import './App.css';
 export default function App() {
 
   const SET_CURRENT_ANSWER = 'SET_CURRENT_ANSWER';
+  const SET_CURRENT_QUESTION = 'SET_CURRENT_QUESTION';
+  const SET_ERROR = 'SET_ERROR';
+  const SET_SHOW_RESULTS = 'SET_SHOW_RESULTS';
+  const SET_ANSWERS = 'SET_ANSWERS';
 
   function quizReducer(state, action) {
     switch(action.type) {
@@ -17,6 +21,11 @@ export default function App() {
           ...state,
           currentAnswer: action.currentAnswer
         };
+        case SET_CURRENT_QUESTION:
+          return {
+            ...state,
+            currentQuestion: action.currentQuestion,
+          }
         default:
           return state;
     }
