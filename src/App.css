@@ -49,6 +49,10 @@ h2 {
     outline: none;
 }
 
+.results h2 {
+    font-weight: 700;
+}
+
 .results span.correct {
     color: #c8ffbb;
 }

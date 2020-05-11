@@ -7,6 +7,13 @@ import './reset.css';
 import './App.css';
 
 export default function App() {
+  const initialState = {
+    currentQuestion: 0,
+    currentAnswer: '',
+    answers: [],
+    showResults: false,
+    error: '',
+  }
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [currentAnswer, setCurrentAnswer] = useState('');
   const [showResults, setShowResults] = useState(false);
