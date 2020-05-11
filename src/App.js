@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useReducer} from 'react';
 
 import Progress from './components/Progress';
 import Question from './components/Question';
@@ -7,6 +7,7 @@ import './reset.css';
 import './App.css';
 
 export default function App() {
+
   const initialState = {
     currentQuestion: 0,
     currentAnswer: '',
