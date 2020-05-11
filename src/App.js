@@ -16,7 +16,9 @@ export default function App() {
         return {
           ...state,
           currentAnswer: action.currentAnswer
-        }
+        };
+        default:
+          return state;
     }
 
   }
@@ -30,6 +32,7 @@ export default function App() {
   };
 
   const [state,dispatch] = useReducer(quizReducer, initialState);
+  const {currentQuestion, currentAnswer, answers, showResults, error} = state;
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [currentAnswer, setCurrentAnswer] = useState('');
@@ -73,7 +76,7 @@ export default function App() {
   const question = questions[currentQuestion];
 
   const handleClick = e => {
-    setCurrentAnswer(e.target.value);
+    dispatch({ type: SET_CURRENT_ANSWER, currentAnswer: e.target.value });
     setError('');
   };
 
@@ -108,7 +111,7 @@ export default function App() {
 
   const restart = () => {
     setAnswers([]);
-    setCurrentAnswer('');
+    dispatch({ type: SET_CURRENT_ANSWER, currentAnswer: '' });
     setCurrentQuestion(0);
     setShowResults(false);
   }
@@ -123,7 +126,7 @@ export default function App() {
     
     answers.push(answer);
     setAnswers(answers);
-    setCurrentAnswer('');
+    dispatch({type: SET_CURRENT_ANSWER, currentAnswer: ''});
 
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion (currentQuestion + 1);
