@@ -8,13 +8,29 @@ import './App.css';
 
 export default function App() {
 
+  const SET_CURRENT_ANSWER = 'SET_CURRENT_ANSWER';
+
+  function quizReducer(state, action) {
+    switch(action.type) {
+      case SET_CURRENT_ANSWER:
+        return {
+          ...state,
+          currentAnswer: action.currentAnswer
+        }
+    }
+
+  }
+
   const initialState = {
     currentQuestion: 0,
     currentAnswer: '',
     answers: [],
     showResults: false,
     error: '',
-  }
+  };
+
+  const [state,dispatch] = useReducer(quizReducer, initialState);
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [currentAnswer, setCurrentAnswer] = useState('');
   const [showResults, setShowResults] = useState(false);
