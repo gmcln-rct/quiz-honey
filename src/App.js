@@ -75,7 +75,7 @@ export default function App() {
 
         return (
           <div key={question.id}>
-            {question.question} | {renderResultsData(question,answer)}
+            {question.question} | {renderResultMark(question,answer)}
           </div>
         )
         });
