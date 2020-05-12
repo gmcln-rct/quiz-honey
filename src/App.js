@@ -1,19 +1,15 @@
-import React, {useState, useReducer} from 'react';
+import React, {useReducer} from 'react';
 
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answers from './components/Answers';
 import './reset.css';
 import './App.css';
+import { SET_ANSWERS, SET_CURRENT_QUESTION, SET_CURRENT_ANSWER, SET_ERROR, SET_SHOW_RESULTS, RESET_QUIZ } from './reducers/types';
 
 export default function App() {
 
-  const SET_CURRENT_ANSWER = 'SET_CURRENT_ANSWER';
-  const SET_CURRENT_QUESTION = 'SET_CURRENT_QUESTION';
-  const SET_ERROR = 'SET_ERROR';
-  const SET_SHOW_RESULTS = 'SET_SHOW_RESULTS';
-  const SET_ANSWERS = 'SET_ANSWERS';
-  const RESET_QUIZ = 'RESET_QUIZ';
+
 
   function quizReducer(state, action) {
     switch(action.type) {
