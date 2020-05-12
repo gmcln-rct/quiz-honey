@@ -25,7 +25,22 @@ export default function App() {
           return {
             ...state,
             currentQuestion: action.currentQuestion,
-          }
+          };
+        case SET_ERROR:
+          return {
+            ...state,
+            error: action.error
+          };
+      case SET_SHOW_RESULTS:
+        return {
+          ...state,
+          showResults: action.showResults,
+        };
+      case SET_ANSWERS:
+        return {
+          ...state,
+          answers: action.answers,
+        };
         default:
           return state;
     }
@@ -43,11 +58,11 @@ export default function App() {
   const [state,dispatch] = useReducer(quizReducer, initialState);
   const {currentQuestion, currentAnswer, answers, showResults, error} = state;
 
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [currentAnswer, setCurrentAnswer] = useState('');
-  const [showResults, setShowResults] = useState(false);
-  const [answers, setAnswers] = useState([]);
-  const [error, setError] = useState('');
+  // const [currentQuestion, setCurrentQuestion] = useState(0);
+  // const [currentAnswer, setCurrentAnswer] = useState('');
+  // const [showResults, setShowResults] = useState(false);
+  // const [answers, setAnswers] = useState([]);
+  // const [error, setError] = useState('');
 
   const questions = [
     {
