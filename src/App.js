@@ -186,7 +186,7 @@ export default function App() {
         <Answers 
           question={question} 
           currentAnswer={currentAnswer} 
-          handleClick={handleClick}/>
+          />
 
         <button className="btn btn-primary" onClick={next}>
           Confirm and continue
