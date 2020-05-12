@@ -109,11 +109,7 @@ export default function App() {
   // eslint-disable-next-line
   const question = questions[currentQuestion];
 
-  const handleClick = e => {
-    dispatch({ type: SET_CURRENT_ANSWER, currentAnswer: e.target.value });
-    dispatch({ type: SET_ERROR, error: '' });
 
-  };
 
   const renderError = () => {
     if (!error) {
