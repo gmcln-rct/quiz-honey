@@ -41,6 +41,11 @@ export default function App() {
           ...state,
           answers: action.answers,
         };
+      case RESET_QUIZ:
+        return {
+          ...state,
+          answers: action.answers,
+        };
         default:
           return state;
     }
@@ -137,10 +142,6 @@ export default function App() {
 
   const restart = () => {
     dispatch({type: RESET_QUIZ});
-    setAnswers([]);
-    dispatch({ type: SET_CURRENT_ANSWER, currentAnswer: '' });
-    setCurrentQuestion(0);
-    setShowResults(false);
   }
 
   const next = () => {
