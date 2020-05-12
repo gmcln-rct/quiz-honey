@@ -101,6 +101,8 @@ export default function App() {
 
   const handleClick = e => {
     dispatch({ type: SET_CURRENT_ANSWER, currentAnswer: e.target.value });
+    dispatch({ type: SET_ERROR, error: '' });
+
     setError('');
   };
 
@@ -134,6 +136,7 @@ export default function App() {
   };
 
   const restart = () => {
+    dispatch({type: RESET_QUIZ});
     setAnswers([]);
     dispatch({ type: SET_CURRENT_ANSWER, currentAnswer: '' });
     setCurrentQuestion(0);
