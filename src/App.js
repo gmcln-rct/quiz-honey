@@ -3,6 +3,7 @@ import React, {useReducer} from 'react';
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answers from './components/Answers';
+import Header from './components/Header';
 import './reset.css';
 import './App.css';
 import { SET_ANSWERS, SET_CURRENT_QUESTION, SET_CURRENT_ANSWER, SET_ERROR, SET_SHOW_RESULTS, RESET_QUIZ } from './reducers/types';
@@ -180,6 +181,7 @@ export default function App() {
 
     return (
       <div className="container">
+        <Header />
         <Progress total={questions.length} current={currentQuestion + 1} />
         <Question question={question.question}/>
         {renderError()}
