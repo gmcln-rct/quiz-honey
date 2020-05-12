@@ -13,6 +13,7 @@ export default function App() {
   const SET_ERROR = 'SET_ERROR';
   const SET_SHOW_RESULTS = 'SET_SHOW_RESULTS';
   const SET_ANSWERS = 'SET_ANSWERS';
+  const RESET_QUIZ = 'RESET_QUIZ';
 
   function quizReducer(state, action) {
     switch(action.type) {
@@ -29,7 +30,7 @@ export default function App() {
         case SET_ERROR:
           return {
             ...state,
-            error: action.error
+            error: action.error,
           };
       case SET_SHOW_RESULTS:
         return {
@@ -44,7 +45,11 @@ export default function App() {
       case RESET_QUIZ:
         return {
           ...state,
-          answers: action.answers,
+          answers: [],
+          currentQuestion: 0,
+          currentAnswer: '',
+          showResults: false,
+          error: ''
         };
         default:
           return state;
@@ -108,7 +113,6 @@ export default function App() {
     dispatch({ type: SET_CURRENT_ANSWER, currentAnswer: e.target.value });
     dispatch({ type: SET_ERROR, error: '' });
 
-    setError('');
   };
 
   const renderError = () => {
@@ -148,20 +152,24 @@ export default function App() {
     const answer = {questionId: question.id, answer: currentAnswer};
 
     if (!currentAnswer) {
-      setError('Please select an option.');
+      dispatch({type: SET_ERROR, error: 'Select an option, dagnabbit!'})
       return;
     }
     
     answers.push(answer);
-    setAnswers(answers);
+
+    dispatch({ type: SET_ANSWERS, answers});
     dispatch({type: SET_CURRENT_ANSWER, currentAnswer: ''});
 
     if (currentQuestion + 1 < questions.length) {
-      setCurrentQuestion (currentQuestion + 1);
+      dispatch({
+        type: SET_CURRENT_QUESTION, 
+        currentQuestion: currentQuestion + 1
+      });
       return;
     }
+    dispatch({type: SET_SHOW_RESULTS, showResults: true});
 
-    setShowResults(true);
   };
 
   if (showResults) {
