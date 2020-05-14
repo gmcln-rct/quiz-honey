@@ -27,7 +27,11 @@
 
 .question-text {
     /* font-family: 'Quicksand', sans-serif; */
-font-family: 'Cardo', serif;
+    margin: 0 2vmin;
+    font-family: 'Cardo', serif;
+    font-size: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
+
+
 }
 
 h2.progress-header {
