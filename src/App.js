@@ -60,6 +60,15 @@ export default function App() {
     answer_d: "The bind method creates a new function and sets the this keyword to the specified object.",
     correct_answer: 'd',
     },
+    {
+      id: 5,
+      question: "When running a JavaScript function, what is the difference between scope and context?",
+      answer_a: "Scope is the object that `this` refers to. Context is the environment that the function is written in.",
+      answer_b: "Scope refers to the availability of variables while running. The object within which the function runs is the context. ",
+      answer_c: "Scope refers to the receiver of a function. Context refers to the variables that are available in that scope.",
+      answer_d: "Scope refers to the ability of a function to modify elements outside of its definition. The context is the JavaScript engine that runs the code.",
+      correct_answer: "b",
+    },
   ];
 
   const initialState = {
