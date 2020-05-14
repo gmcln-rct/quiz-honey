@@ -6,7 +6,10 @@ import Answers from './components/Answers';
 import Header from './components/Header';
 import './reset.css';
 import './App.css';
-import { SET_ANSWERS, SET_CURRENT_QUESTION, SET_CURRENT_ANSWER, SET_ERROR, SET_SHOW_RESULTS, RESET_QUIZ } from './reducers/types';
+import { SET_ANSWERS, 
+        SET_CURRENT_QUESTION,
+        SET_CURRENT_ANSWER, 
+        SET_ERROR, SET_SHOW_RESULTS, RESET_QUIZ } from './reducers/types';
 
 export default function App() {
 
@@ -192,7 +195,7 @@ export default function App() {
 
         <button className="btn btn-primary" onClick={next}>
           Confirm and continue
-          </button>
+        </button>
   
       </div>
     );
