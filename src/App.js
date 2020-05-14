@@ -68,8 +68,6 @@ export default function App() {
   // eslint-disable-next-line
   const question = questions[currentQuestion];
 
-
-
   const renderError = () => {
     if (!error) {
       return;
