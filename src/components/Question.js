@@ -7,6 +7,6 @@ export default function Question() {
     const question = questions[currentQuestion];
 
     return (
-        <h1 className="question-text">{question}</h1>
+        <h1 className="question-text">{question.question}</h1>
     );
 }

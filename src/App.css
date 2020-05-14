@@ -129,9 +129,9 @@ h2 {
 
 .btn:hover {
     color: #fff;
-    background-color: #be9003;
+    background-color: #ffce3c;
     border: 2px solid #fff;
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 

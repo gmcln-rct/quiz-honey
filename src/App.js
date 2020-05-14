@@ -15,7 +15,7 @@ import { SET_ANSWERS,
         SET_ERROR, 
         SET_SHOW_RESULTS, 
         RESET_QUIZ } 
-        from './reducers/types';
+  from './reducers/types';
 
 import quizReducer from './reducers/QuizReducer';
 
@@ -53,7 +53,6 @@ export default function App() {
     },
   ];
 
-
   const initialState = {
     questions,
     currentQuestion: 0,
@@ -66,9 +65,6 @@ export default function App() {
   const [state,dispatch] = useReducer(quizReducer, initialState);
   const {currentQuestion, currentAnswer, answers, showResults, error} = state;
 
-
-
-  
   // eslint-disable-next-line
   const question = questions[currentQuestion];
 
@@ -150,7 +146,7 @@ export default function App() {
         <div className="container">
           <Header />
           <Progress total={questions.length} current={currentQuestion + 1} />
-          <Question question={question.question}/>
+          <Question />
           {renderError()}
           <Answers />
 
