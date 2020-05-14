@@ -35,7 +35,7 @@
 }
 
 h2.progress-header {
-    margin: 4vmin 0;
+    margin: 4vmin 0 2vmin 0;
     font-family: 'Lora', serif;
     font-size: calc(32px + (42 - 32) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
@@ -46,7 +46,7 @@ h2.progress-header {
 
 h1,
 h2 {
-    margin: 1vmin;
+    margin: 2vmin 0;
 }
 
 .answer {
