@@ -21,24 +21,6 @@ import quizReducer from './reducers/QuizReducer';
 
 export default function App() {
 
-
-  const initialState = {
-    currentQuestion: 0,
-    currentAnswer: '',
-    answers: [],
-    showResults: false,
-    error: '',
-  };
-
-  const [state,dispatch] = useReducer(quizReducer, initialState);
-  const {currentQuestion, currentAnswer, answers, showResults, error} = state;
-
-  // const [currentQuestion, setCurrentQuestion] = useState(0);
-  // const [currentAnswer, setCurrentAnswer] = useState('');
-  // const [showResults, setShowResults] = useState(false);
-  // const [answers, setAnswers] = useState([]);
-  // const [error, setError] = useState('');
-
   const questions = [
     {
       id: 1,
@@ -71,6 +53,22 @@ export default function App() {
     },
   ];
 
+
+  const initialState = {
+    questions,
+    currentQuestion: 0,
+    currentAnswer: '',
+    answers: [],
+    showResults: false,
+    error: '',
+  };
+
+  const [state,dispatch] = useReducer(quizReducer, initialState);
+  const {currentQuestion, currentAnswer, answers, showResults, error} = state;
+
+
+
+  
   // eslint-disable-next-line
   const question = questions[currentQuestion];
 
