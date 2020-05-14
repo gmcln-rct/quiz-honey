@@ -13,7 +13,7 @@ import { SET_ANSWERS,
         SET_SHOW_RESULTS, 
         RESET_QUIZ } 
         from './reducers/types';
-import {QuizReducer} from './reducers/QuizReducer';
+import quizReducer from './reducers/QuizReducer';
 
 export default function App() {
 

@@ -5,8 +5,7 @@ import {
     SET_ERROR,
     SET_SHOW_RESULTS,
     RESET_QUIZ
-}
-    from './types';
+} from './types';
 
 export default function quizReducer(state, action) {
     switch (action.type) {
