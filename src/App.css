@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 
 .logo {
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
 }
 
@@ -15,6 +15,7 @@
     min-height: 100vh;
     margin: 0 1vmin;
     justify-content: center;
+
     font-size: 23px;
     color: white;
     text-align: center;
@@ -35,7 +36,9 @@
 }
 
 h2.progress-header {
-    font-family: 'Quicksand', sans-serif;
+    margin: 4vmin 0;
+    font-family: 'Lora', serif;
+    font-size: calc(32px + (42 - 32) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
     font-size:2.4rem;
     color: #ffc107;
