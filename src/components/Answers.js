@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Answer from './Answer';
 import QuizContext from '../context/QuizContext';
 
-export default function Answers(props) {
+export default function Answers() {
     const { state, dispatch } = useContext(QuizContext);
     const { currentAnswer, currentQuestion, questions } = state;
     const question = questions[currentQuestion];

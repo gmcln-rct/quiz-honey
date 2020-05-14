@@ -1,10 +1,10 @@
 import React, {useReducer} from 'react';
 
+import Header from './components/Header';
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answers from './components/Answers';
 import QuizContext from './context/QuizContext';
-import Header from './components/Header';
 
 import './reset.css';
 import './App.css';
@@ -16,6 +16,7 @@ import { SET_ANSWERS,
         SET_SHOW_RESULTS, 
         RESET_QUIZ } 
         from './reducers/types';
+
 import quizReducer from './reducers/QuizReducer';
 
 export default function App() {
@@ -148,21 +149,21 @@ export default function App() {
 
     return (
       <QuizContext.Provider value={{ state, dispatch }}>
-      <div className="container">
-        <Header />
-        <Progress total={questions.length} current={currentQuestion + 1} />
-        <Question question={question.question}/>
-        {renderError()}
-        <Answers 
-          question={question} 
-          currentAnswer={currentAnswer} 
-          />
+        <div className="container">
+          <Header />
+          <Progress total={questions.length} current={currentQuestion + 1} />
+          <Question question={question.question}/>
+          {renderError()}
+          <Answers 
+            question={question} 
+            currentAnswer={currentAnswer} 
+            />
 
-        <button className="btn btn-primary" onClick={next}>
-          Confirm and continue
-        </button>
-  
-      </div>
+          <button className="btn btn-primary" onClick={next}>
+            Confirm and continue
+          </button>
+    
+        </div>
       </QuizContext.Provider>
     );
   }
