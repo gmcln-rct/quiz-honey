@@ -152,10 +152,7 @@ export default function App() {
           <Progress total={questions.length} current={currentQuestion + 1} />
           <Question question={question.question}/>
           {renderError()}
-          <Answers 
-            question={question} 
-            currentAnswer={currentAnswer} 
-            />
+          <Answers />
 
           <button className="btn btn-primary" onClick={next}>
             Confirm and continue

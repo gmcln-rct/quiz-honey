@@ -6,6 +6,7 @@ export default function Answers() {
     const { state, dispatch } = useContext(QuizContext);
     const { currentAnswer, currentQuestion, questions } = state;
     const question = questions[currentQuestion];
+    
     return (
         <>
             <Answer letter="a" answer={question.answer_a} dispatch={dispatch} selected={currentAnswer === 'a'} />
