@@ -8,7 +8,7 @@ import {
 }
     from './types';
 
-function quizReducer(state, action) {
+export default function quizReducer(state, action) {
     switch (action.type) {
         case SET_CURRENT_ANSWER:
             return {
