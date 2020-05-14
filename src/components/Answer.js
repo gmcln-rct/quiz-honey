@@ -7,7 +7,7 @@ export default function Answer(props) {
     const handleClick = e => {
         props.dispatch({ 
             type: SET_CURRENT_ANSWER, 
-            currentAnswer: e.target.value 
+            currentAnswer: e.target.value,
         });
         props.dispatch({ type: SET_ERROR, error: '' });
     };
