@@ -51,6 +51,15 @@ export default function App() {
       answer_d: 'useRequest()',
       correct_answer: 'c',
     },
+    {
+    id: 4,
+    question: "What does bind do in JavaScript?",
+    answer_a: "Bind is a method for connecting two strings",
+    answer_b: "Bind is similar to the call method but accepts an array of arguments instead of comma separated values.",
+    answer_c: "The bind method sets the this inside the function and immediately executes that function.",
+    answer_d: "The bind method creates a new function and sets the this keyword to the specified object.",
+    correct_answer: 'd',
+    },
   ];
 
   const initialState = {
