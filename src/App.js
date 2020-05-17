@@ -21,7 +21,7 @@ import quizReducer from './reducers/QuizReducer';
 
 export default function App() {
 
-  const questions = [
+  const questionsLibrary = [
     {
       id: 1,
       question: 'Which statement about Hooks is not true?',
@@ -168,7 +168,29 @@ export default function App() {
     },
   ];
 
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
 
+  let randNum = getRandomInt(15);
+
+  console.log(randNum);
+  const createQuestions = () => {
+    let questionSet = [];
+    let questionsLength = questionsLibrary.length;
+    while (questionSet.length < 5) {
+      let randNum = getRandomInt(questionsLength);
+      
+      if(!questionSet.includes(questionsLibrary[randNum])) {
+        questionSet.push(questionsLibrary[randNum]);
+      }
+    }
+      return questionSet;
+  }
+
+  // let questions = createQuestions();
+
+let questions = questionsLibrary;
 
   const initialState = {
     questions,
