@@ -11,6 +11,46 @@ const QuestionContextProvider = (props) => {
 
     ]);
     const questions = [
+      
+        {
+            id: 6,
+            question: "In React, every time the render method in a react component is called, ________.",
+            answer_a: "every DOM element on the entire page will be re-painted",
+            answer_b: "every DOM element referenced by the React component will be re-painted.",
+            answer_c: "only DOM elements with updated content will be re-painted",
+            answer_d: "DOM elements with updated content and any DOM elements refernced by the React component will be re-painted.",
+            correct_answer: "c",
+        },
+
+        {
+            id: 7,
+            question: "Which is true for the React lifecycle methold componentDidUpdate?",
+            answer_a: "It can prevent a component from mounting.",
+            answer_b: "It is called immediately after updating occurs, but is not called on the initial render.",
+            answer_c: "It is called immediately after updating occurs, including the initial render.",
+            answer_d: "It can be used to prevent a component from mounting.",
+            correct_answer: "b",
+        },
+        {
+            id: 8,
+            question: "What is a Closure in JavaScript?",
+            answer_a: "A collection of all the variables in scope at the time of creation of the function.",
+            answer_b: "A collection of all the variables in the context at the time of creation of the function.",
+            answer_c: "Any function within another function.",
+            answer_d: "A different way of describing a callback.",
+            correct_answer: "a",
+        },
+
+        {
+            id: 9,
+            question: "What are the data types in JavaScript?",
+            answer_a: "String, Number, Boolean, NaN, Object, null, Symbol",
+            answer_b: "String, Number, Boolean, undefined, Object, null, Symbol, NaN",
+            answer_c: "String, Number, Boolean, undefined, Object, null, Symbol",
+            answer_d: "String, Number, Boolean, undefined, Object, Symbol",
+            correct_answer: "c",
+        },
+
         {
             id: 1,
             question: 'Which statement about Hooks is not true?',
@@ -57,44 +97,6 @@ const QuestionContextProvider = (props) => {
             answer_c: "Scope refers to the receiver of a function. Context refers to the variables that are available in that scope.",
             answer_d: "Scope refers to the ability of a function to modify elements outside of its definition. The context is the JavaScript engine that runs the code.",
             correct_answer: "b",
-        },
-        {
-            id: 6,
-            question: "In React, every time the render method in a react component is called, ________.",
-            answer_a: "every DOM element on the entire page will be re-painted",
-            answer_b: "every DOM element referenced by the React component will be re-painted.",
-            answer_c: "only DOM elements with updated content will be re-painted",
-            answer_d: "DOM elements with updated content and any DOM elements refernced by the React component will be re-painted.",
-            correct_answer: "c",
-        },
-
-        {
-            id: 7,
-            question: "Which is true for the React lifecycle methold componentDidUpdate?",
-            answer_a: "It can prevent a component from mounting.",
-            answer_b: "It is called immediately after updating occurs, but is not called on the initial render.",
-            answer_c: "It is called immediately after updating occurs, including the initial render.",
-            answer_d: "It can be used to prevent a component from mounting.",
-            correct_answer: "b",
-        },
-        {
-            id: 8,
-            question: "What is a Closure in JavaScript?",
-            answer_a: "A collection of all the variables in scope at the time of creation of the function.",
-            answer_b: "A collection of all the variables in the context at the time of creation of the function.",
-            answer_c: "Any function within another function.",
-            answer_d: "A different way of describing a callback.",
-            correct_answer: "a",
-        },
-
-        {
-            id: 9,
-            question: "What are the data types in JavaScript?",
-            answer_a: "String, Number, Boolean, NaN, Object, null, Symbol",
-            answer_b: "String, Number, Boolean, undefined, Object, null, Symbol, NaN",
-            answer_c: "String, Number, Boolean, undefined, Object, null, Symbol",
-            answer_d: "String, Number, Boolean, undefined, Object, Symbol",
-            correct_answer: "c",
         },
     ];
 

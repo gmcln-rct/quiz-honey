@@ -22,53 +22,7 @@ import quizReducer from './reducers/QuizReducer';
 export default function App() {
 
   const questionsLibrary = [
-    {
-      id: 1,
-      question: 'Which statement about Hooks is not true?',
-      answer_a:
-        'Hooks are 100% backwards-compatible and can be used side by side with classes',
-      answer_b: 'Hooks are still in beta and not available yet',
-      answer_c:
-        "Hooks are completely opt-in, there's no need to rewrite existing code",
-      answer_d: 'All of the above',
-      correct_answer: 'b',
-    },
-    {
-      id: 2,
-      question: 'Which one is not a Hook?',
-      answer_a: 'useState()',
-      answer_b: 'useConst()',
-      answer_c: 'useReducer()',
-      answer_d: 'All of the above',
-      correct_answer: 'b',
-    },
-    {
-      id: 3,
-      question: 'What Hook should be used for data fetching?',
-      answer_a: 'useDataFetching()',
-      answer_b: 'useApi()',
-      answer_c: 'useEffect()',
-      answer_d: 'useRequest()',
-      correct_answer: 'c',
-    },
-    {
-    id: 4,
-    question: "What does bind do in JavaScript?",
-    answer_a: "Bind is a method for connecting two strings",
-    answer_b: "Bind is similar to the call method but accepts an array of arguments instead of comma separated values.",
-    answer_c: "The bind method sets the this inside the function and immediately executes that function.",
-    answer_d: "The bind method creates a new function and sets the this keyword to the specified object.",
-    correct_answer: 'd',
-    },
-    {
-      id: 5,
-      question: "When running a JavaScript function, what is the difference between scope and context?",
-      answer_a: "Scope is the object that `this` refers to. Context is the environment that the function is written in.",
-      answer_b: "Scope refers to the availability of variables while running. The object within which the function runs is the context. ",
-      answer_c: "Scope refers to the receiver of a function. Context refers to the variables that are available in that scope.",
-      answer_d: "Scope refers to the ability of a function to modify elements outside of its definition. The context is the JavaScript engine that runs the code.",
-      correct_answer: "b",
-    },
+    
     {
       id: 6,
       question: "In React, every time the render method in a react component is called, ________.",
@@ -111,12 +65,13 @@ export default function App() {
     {
       id: 10,
       question: "What is the difference between Attributes and Property in JavaScript?",
-      answer_a: "An Property provides more details about an element like id, type, value etc, whereas the Atribute is the value assigned to the Attrubyte like type='text' or value='name'.",
-      answer_b: "An Attribute provides more details about an element like id, type, value etc, whereas the Property is the value assigned to the Attrubyte like type='”'text'”' or value='name'.",
+      answer_a: "An Property provides more details about an element like id, type, value etc, whereas the Attribute is the value assigned to the Property like type='text' or value='name'.",
+      answer_b: "An Attribute provides more details about an element like id, type, value etc, whereas the Property is the value assigned to the Attrubute like type='text' or value='name'",
       answer_c: "A Property is any value that belongs to an object, and an Attribute describes it.",
       answer_d: "Unline Attritbutes, in general a standard HTML Property automatically becomes a property of DOM objects.",
       correct_answer: "b",
     },
+
     {
       id: 11,
       question: "Which of the below are four ways an HTML element can be accessed by JavaScript code?",
@@ -159,12 +114,60 @@ export default function App() {
 
     {
       id: 15,
-      question: "What is the difference between call and apply in JavaScript?",
+      question: "What is the difference between Call and Apply in JavaScript?",
       answer_a: "Apply creates a copy of the function and sets the this keyword.",
       answer_b: "Call accepts an array of arguments while Apply accepts comma-separated values.",
       answer_c: "Apply accepts accepts an array of arguments instead of comma separated values.",
       answer_d: "Call creates a copy of the function and sets the this keyword.",
       correct_answer: "c",
+    },
+
+    {
+      id: 1,
+      question: 'Which statement about Hooks is not true?',
+      answer_a:
+        'Hooks are 100% backwards-compatible and can be used side by side with classes',
+      answer_b: 'Hooks are still in beta and not available yet',
+      answer_c:
+        "Hooks are completely opt-in, there's no need to rewrite existing code",
+      answer_d: 'All of the above',
+      correct_answer: 'b',
+    },
+    {
+      id: 2,
+      question: 'Which one is not a Hook?',
+      answer_a: 'useState()',
+      answer_b: 'useConst()',
+      answer_c: 'useReducer()',
+      answer_d: 'All of the above',
+      correct_answer: 'b',
+    },
+    {
+      id: 3,
+      question: 'What Hook should be used for data fetching?',
+      answer_a: 'useDataFetching()',
+      answer_b: 'useApi()',
+      answer_c: 'useEffect()',
+      answer_d: 'useRequest()',
+      correct_answer: 'c',
+    },
+    {
+      id: 4,
+      question: "What does bind do in JavaScript?",
+      answer_a: "Bind is a method for connecting two strings",
+      answer_b: "Bind is similar to the call method but accepts an array of arguments instead of comma separated values.",
+      answer_c: "The bind method sets the this inside the function and immediately executes that function.",
+      answer_d: "The bind method creates a new function and sets the this keyword to the specified object.",
+      correct_answer: 'd',
+    },
+    {
+      id: 5,
+      question: "When running a JavaScript function, what is the difference between scope and context?",
+      answer_a: "Scope is the object that `this` refers to. Context is the environment that the function is written in.",
+      answer_b: "Scope refers to the availability of variables while running. The object within which the function runs is the context. ",
+      answer_c: "Scope refers to the receiver of a function. Context refers to the variables that are available in that scope.",
+      answer_d: "Scope refers to the ability of a function to modify elements outside of its definition. The context is the JavaScript engine that runs the code.",
+      correct_answer: "b",
     },
   ];
 
@@ -172,8 +175,8 @@ export default function App() {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-  let randNum = getRandomInt(15);
-  console.log(randNum);
+  // let randNum = getRandomInt(15);
+  // console.log(randNum);
 
   const createQuestions = () => {
     let questionSet = [];
