@@ -107,8 +107,18 @@ export default function App() {
       answer_d: "String, Number, Boolean, undefined, Object, Symbol",
       correct_answer: "c",
     },
-
+    {
+      id: 10,
+      question: "What is the difference between Attributes and Property in JavaScript?",
+      answer_a: "An Property provides more details about an element like id, type, value etc, whereas the Atribute is the value assigned to the Attrubyte like type='text' or value='name'.",
+      answer_b: "An Attribute provides more details about an element like id, type, value etc, whereas the Property is the value assigned to the Attrubyte like type='text' or value='name'",
+      answer_c: "A Property is any value that belongs to an object, and an Attribute describes it.",
+      answer_d: "Unline Attritbutes, in general a standard HTML Property automatically becomes a property of DOM objects.",
+      correct_answer: "b",
+    },
   ];
+
+
 
   const initialState = {
     questions,
