@@ -25,15 +25,6 @@
     background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-
-.question-text {
-    /* font-family: 'Quicksand', sans-serif; */
-    margin: 0 4vmin;
-    font-family: 'Cardo', serif;
-    font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
-    line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
-}
-
 h2.progress-header {
     margin: 4vmin 0 2vmin 0;
     font-family: 'Lora', serif;
@@ -48,6 +39,15 @@ h1,
 h2 {
     margin: 2vmin 0;
 }
+.question-text {
+    /* font-family: 'Quicksand', sans-serif; */
+    margin: 0 4vmin;
+    font-family: 'Cardo', serif;
+    font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
+    line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
+}
+
+
 
 .answer {
     width: 90vw;
@@ -59,6 +59,7 @@ h2 {
     font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(22px + (28 - 22) * ((100vw - 300px) / (1800 - 300)));
     text-align: left;
+    background-color: #fff;
 
     border: 1px solid #fff;
     border-radius: 10px;
@@ -80,6 +81,21 @@ h2 {
     outline: none;
 }
 
+.letter {
+    /* position: absolute; */
+    width: 30px;
+    height: 28px;
+    top: 0;
+    padding: 5px;
+    left: 0;
+
+    font-family: 'Lora', serif;
+    text-align: center;
+    color: #4f4c4c;
+}
+
+/* Results */
+
 .results h2 {
     font-weight: 700;
 }
@@ -96,18 +112,7 @@ h2 {
     color: #f27c7c;
 }
 
-.letter {
-    /* position: absolute; */
-    width: 30px;
-    height: 28px;
-    top: 0;
-    padding: 5px;
-    left: 0;
 
-    font-family: 'Lora', serif;
-    text-align: center;
-    color: #4f4c4c;
-}
 
 /* Button */
 
