@@ -117,7 +117,6 @@ export default function App() {
       answer_d: "Unline Attritbutes, in general a standard HTML Property automatically becomes a property of DOM objects.",
       correct_answer: "b",
     },
-
     {
       id: 11,
       question: "Which of the below are four ways an HTML element can be accessed by JavaScript code?",
@@ -146,6 +145,26 @@ export default function App() {
       answer_c: "Objects are passed by value and primitive data types are passed by reference.",
       answer_d: "Primitives can only be passed by value whereas objects can be passed by value or by reference.",
       correct_answer: "a",
+    },
+
+    {
+      id: 14,
+      question: "Which of the following is not true about 'strict mode' in JavaScript?",
+      answer_a: "It can be enabled by adding “use strict” at the beginning of a file, a program, or a function.",
+      answer_b: "It enforces strict limits on the number of variables you can use in any given file.",
+      answer_c: "It enables better error-checking into JavaScript code.",
+      answer_d: "You cannot use implicitly declared variables or add a property to an object that is not extensible.",
+      correct_answer: "b",
+    },
+
+    {
+      id: 15,
+      question: "What is the difference between call and apply in JavaScript?",
+      answer_a: "Apply creates a copy of the function and sets the this keyword.",
+      answer_b: "Call accepts an array of arguments while Apply accepts comma-separated values.",
+      answer_c: "Apply accepts accepts an array of arguments instead of comma separated values.",
+      answer_d: "Call creates a copy of the function and sets the this keyword.",
+      correct_answer: "c",
     },
   ];
 
