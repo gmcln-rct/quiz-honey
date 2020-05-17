@@ -100,21 +100,52 @@ export default function App() {
 
     {
       id: 9,
-      question: "What are the data types in JavaScript?",
+      question: "What are the primitive data types in JavaScript?",
       answer_a: "String, Number, Boolean, NaN, Object, null, Symbol",
-      answer_b: "String, Number, Boolean, undefined, Object, null, Symbol, NaN",
-      answer_c: "String, Number, Boolean, undefined, Object, null, Symbol",
+      answer_b: "String, Number, Boolean, undefined, Object, null, Symbol",
+      answer_c: "String, Number, Boolean, undefined, null, Symbol",
       answer_d: "String, Number, Boolean, undefined, Object, Symbol",
       correct_answer: "c",
     },
+
     {
       id: 10,
       question: "What is the difference between Attributes and Property in JavaScript?",
       answer_a: "An Property provides more details about an element like id, type, value etc, whereas the Atribute is the value assigned to the Attrubyte like type='text' or value='name'.",
-      answer_b: "An Attribute provides more details about an element like id, type, value etc, whereas the Property is the value assigned to the Attrubyte like type='text' or value='name'",
+      answer_b: "An Attribute provides more details about an element like id, type, value etc, whereas the Property is the value assigned to the Attrubyte like type='”'text'”' or value='name'.",
       answer_c: "A Property is any value that belongs to an object, and an Attribute describes it.",
       answer_d: "Unline Attritbutes, in general a standard HTML Property automatically becomes a property of DOM objects.",
       correct_answer: "b",
+    },
+
+    {
+      id: 11,
+      question: "Which of the below are four ways an HTML element can be accessed by JavaScript code?",
+      answer_a: "getElementById, getElementsByClassName, queryTagName, querySelector",
+      answer_b: "getElementById, getElementsByClassName, getElementsByTagName, querySelector",
+      answer_c: "getElementById, getElementByClassName, getElementByTag, querySelector",
+      answer_d: "getElementById, getElementByClassName, getElementByTagName, querySelector",
+      correct_answer: "b",
+    },
+
+    {
+      id: 12,
+      question: "What is the difference between window & document in JavaScript?",
+      answer_a: "While window is a global object which holds variables, functions, history,and location, the document comes under the window and can be considered as the property of the window.",
+      answer_b: "Document and window both are global objects but document is called at runtime.",
+      answer_c: "While document is a global object which holds variables, functions, history,and location, the window comes under the document and can be considered as the property of the document.",
+      answer_d: "The window hold variables and functions whereas the document holds history and location of an object.",
+      correct_answer: "a",
+    },
+
+    {
+      id: 13,
+      question: "In JavaScript, what is the difference in how primitive and object types are passed in functions?",
+      answer_a: "Primitives are passed by value and objects are passed by reference.",
+      answer_b: "There is no difference in how they are passed.",
+      answer_c: "Objects are passed by value and primitive data types are passed by reference.",
+      answer_d: "Primitives can only be passed by value whereas objects can be passed by value or by reference.",
+      correct_answer: "a",
     },
   ];
 
