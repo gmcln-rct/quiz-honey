@@ -1,9 +1,9 @@
 import React, { createContext, useState } from 'react';
 import uuid from 'uuid/v1';
 
-export const MovieContext = createContext();
+export const QuestionContext = createContext();
 
-const MovieContextProvider = (props) => {
+const QuestionContextProvider = (props) => {
     const [Movies, setMovies] = useState([
         { title: "Citizen Kane", director: "Orson Welles", year: "1941", id: 1 },
         { title: "The Waterboy", director: "Frank Coraci", year: "1998", id: 2 },
@@ -77,20 +77,34 @@ const MovieContextProvider = (props) => {
             answer_d: "It can be used to prevent a component from mounting.",
             correct_answer: "b",
         },
+        {
+            id: 8,
+            question: "What is a Closure in JavaScript?",
+            answer_a: "A collection of all the variables in scope at the time of creation of the function.",
+            answer_b: "A collection of all the variables in the context at the time of creation of the function.",
+            answer_c: "Any function within another function.",
+            answer_d: "A different way of describing a callback.",
+            correct_answer: "a",
+        },
+
+        {
+            id: 9,
+            question: "What are the data types in JavaScript?",
+            answer_a: "String, Number, Boolean, NaN, Object, null, Symbol",
+            answer_b: "String, Number, Boolean, undefined, Object, null, Symbol, NaN",
+            answer_c: "String, Number, Boolean, undefined, Object, null, Symbol",
+            answer_d: "String, Number, Boolean, undefined, Object, Symbol",
+            correct_answer: "c",
+        },
     ];
 
-    const addMovie = (title, director, year) => {
-        setMovies([...Movies, { title, director, year, id: uuid() }]);
-    };
-    const removeMovie = (id) => {
-        setMovies(Movies.filter(Movie => Movie.id !== id));
-    }
+
 
     return (
-        <MovieContext.Provider value={{ Movies, addMovie, removeMovie }}>
+        <QuestionContext.Provider value={{ questions }}>
             {props.children}
-        </MovieContext.Provider>
+        </QuestionContext.Provider>
     );
 }
 
-export default MovieContextProvider;
+export default QuestionContextProvider;
