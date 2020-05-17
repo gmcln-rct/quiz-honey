@@ -88,6 +88,25 @@ export default function App() {
       answer_d: "It can be used to prevent a component from mounting.",
       correct_answer: "b",
     },
+    {
+      id: 8,
+      question: "What is a Closure in JavaScript?",
+      answer_a: "A collection of all the variables in scope at the time of creation of the function.",
+      answer_b: "A collection of all the variables in the context at the time of creation of the function.",
+      answer_c: "Any function within another function.",
+      answer_d: "A different way of describing a callback.",
+      correct_answer: "a",
+    },
+
+    {
+      id: 9,
+      question: "What are the data types in JavaScript?",
+      answer_a: "String, Number, Boolean, NaN, Object, null, Symbol",
+      answer_b: "String, Number, Boolean, undefined, Object, null, Symbol, NaN",
+      answer_c: "String, Number, Boolean, undefined, Object, null, Symbol",
+      answer_d: "String, Number, Boolean, undefined, Object, Symbol",
+      correct_answer: "c",
+    },
 
   ];
 
