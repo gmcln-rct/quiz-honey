@@ -191,7 +191,7 @@ export default function App() {
       return questionSet;
   }
 
-  // let questions = createQuestions();
+
 
 let questions = questionsLibrary;
 
@@ -209,9 +209,6 @@ let questions = questionsLibrary;
   const [state,dispatch] = useReducer(quizReducer, initialState);
   const {currentQuestion, currentAnswer, answers, showResults, error} = state;
 
-  // if (currentQuestion === 0) {
-  //     let questions = createQuestions();
-  // } 
 
   // eslint-disable-next-line
   const question = questions[currentQuestion];
