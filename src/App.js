@@ -121,7 +121,66 @@ export default function App() {
       answer_d: "Call creates a copy of the function and sets the this keyword.",
       correct_answer: "c",
     },
+    {
+      id: 16,
+      question: "In JavaScript, what is the difference between event.preventDefault() and event.stopPropagation() methods?",
+      answer_a: "event.preventDefault() can only be used with controlled components.",
+      answer_b: "They are the same.",
+      answer_c: "The event.stopPropagation() method prevents the default behavior of an element. The event.preventDefault() method stops the propogation of an event in the bubbling or capturing phase.",
+      answer_d: "The event.preventDefault() method prevents the default behavior of an element. The event.stopPropagation() method stops the propogation of an event in the bubbling or capturing phase.",
+      correct_answer: "d",
+    },
 
+    {
+      id: 17,
+      question: "In JavaScript, what is event.currentTarget?",
+      answer_a: "It is the element on which the event occurred or the element that triggered the event.",
+      answer_b: "It is the element on which we attach the event handler explicitly.",
+      answer_c: "It is the element event that is handled during the current event loop.",
+      answer_d: "It is the parent element of the elment where the event occurred.",
+      correct_answer: "b",
+    },
+
+    {
+      id: 18,
+      question: "Whis of these statements about var, let and const are not true?",
+      answer_a: "var declarations are globally scoped or function scoped while letand const are block scoped.",
+      answer_b: "var variables can be updated by value and re-declared within their scopes, but let variables cannot be re-declared. const variables can neither be updated nor re-declared.",
+      answer_c: "All three of these keywords are hoisted to the top of their scope and are initialized with undefined.",
+      answer_d: "While var and let can be declared without being initialized, const must be initialized during declaration.",
+      correct_answer: "c",
+    },
+
+    {
+      id: 19,
+      question: "Which of the following statements about ES6 Promise objects are true?",
+      answer_a: "Promises allow the writing of asynchronous JavaScript code in a linear manner.",
+      answer_b: "Promises prevent asynchronous functions from executing and transforms them into synchronous functions.",
+      answer_c: "Promises create a private scope around a function, preventing it from making changes to surround variables.",
+      answer_d: " Promises create the need for deeply nested callbacks for asynchronous operations.",
+      correct_answer: "a",
+    },
+
+    {
+      id: 20,
+      question: "Which of the following is not a reserved work in JavaScript?",
+      answer_a: "const",
+      answer_b: "type of",
+      answer_c: "void",
+      answer_d: "class",
+      correct_answer: "b",
+    },
+
+    {
+      id: 21,
+      question: "What is the difference between function declaration and function expression?",
+      answer_a: "Function expressions load only when the interpreter reaches that line of code, while function declarations are hoisted to the top of other code.",
+      answer_b: "Function declarations are not hoisted to the top of other code while expressions are.",
+      answer_c: "Unlike function expressions, function declarations retain a copy of the local variables from the scope where they were defined.",
+      answer_d: "Function declarations and function expressions are the same.",
+      correct_answer: "a",
+    },
+    
     {
       id: 1,
       question: 'Which statement about Hooks is not true?',
