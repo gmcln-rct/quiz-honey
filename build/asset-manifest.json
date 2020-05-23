@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/honeybadger-institute/static/css/main.6b9a8c58.chunk.css",
+    "main.js": "/honeybadger-institute/static/js/main.972b0e67.chunk.js",
+    "main.js.map": "/honeybadger-institute/static/js/main.972b0e67.chunk.js.map",
+    "runtime-main.js": "/honeybadger-institute/static/js/runtime-main.d531b1c2.js",
+    "runtime-main.js.map": "/honeybadger-institute/static/js/runtime-main.d531b1c2.js.map",
+    "static/js/2.54be4586.chunk.js": "/honeybadger-institute/static/js/2.54be4586.chunk.js",
+    "static/js/2.54be4586.chunk.js.map": "/honeybadger-institute/static/js/2.54be4586.chunk.js.map",
+    "index.html": "/honeybadger-institute/index.html",
+    "precache-manifest.f4cbb4d893a2ec659bed374d0573e13b.js": "/honeybadger-institute/precache-manifest.f4cbb4d893a2ec659bed374d0573e13b.js",
+    "service-worker.js": "/honeybadger-institute/service-worker.js",
+    "static/css/main.6b9a8c58.chunk.css.map": "/honeybadger-institute/static/css/main.6b9a8c58.chunk.css.map",
+    "static/js/2.54be4586.chunk.js.LICENSE.txt": "/honeybadger-institute/static/js/2.54be4586.chunk.js.LICENSE.txt",
+    "static/media/quiz-badger-logo.png": "/honeybadger-institute/static/media/quiz-badger-logo.736301b8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d531b1c2.js",
+    "static/js/2.54be4586.chunk.js",
+    "static/css/main.6b9a8c58.chunk.css",
+    "static/js/main.972b0e67.chunk.js"
+  ]
+}
