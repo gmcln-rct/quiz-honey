@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6b9a8c58.chunk.css",
+    "main.js": "/static/js/main.6153e95b.chunk.js",
+    "main.js.map": "/static/js/main.6153e95b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c87a5f44.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c87a5f44.js.map",
+    "static/js/2.54be4586.chunk.js": "/static/js/2.54be4586.chunk.js",
+    "static/js/2.54be4586.chunk.js.map": "/static/js/2.54be4586.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cdff758306a7c52ea34bb0e864973481.js": "/precache-manifest.cdff758306a7c52ea34bb0e864973481.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6b9a8c58.chunk.css.map": "/static/css/main.6b9a8c58.chunk.css.map",
+    "static/js/2.54be4586.chunk.js.LICENSE.txt": "/static/js/2.54be4586.chunk.js.LICENSE.txt",
+    "static/media/quiz-badger-logo.png": "/static/media/quiz-badger-logo.736301b8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c87a5f44.js",
+    "static/js/2.54be4586.chunk.js",
+    "static/css/main.6b9a8c58.chunk.css",
+    "static/js/main.6153e95b.chunk.js"
+  ]
+}
