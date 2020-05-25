@@ -7,8 +7,8 @@ import Answers from './components/Answers';
 
 import QuizContext from './context/QuizContext';
 
-import './reset.css';
-import './App.css';
+import './reset.scss';
+import './App.scss';
 
 import { SET_ANSWERS, 
         SET_CURRENT_QUESTION,

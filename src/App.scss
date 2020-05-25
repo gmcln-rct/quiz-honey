@@ -1,12 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .logo {
     max-width: 300px;
     height: auto;
     margin: 2vmin 0 0 0;
 }
+
+.header-section {
+
+    h2 {
+        /*Neon*/
+        font-family: 'Pacifico', cursive;
+        font-size: calc(32px + (42 - 32) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(36px + (48 - 36) * ((100vw - 300px) / (1800 - 300)));
+
+        color: #FFDD1B;
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+
+        &:hover {
+            -webkit-animation: neon3 1.0s ease-in-out  alternate;
+            -moz-animation: neon3 1.0s ease-in-out  alternate;
+            animation: neon3 1.0s ease-in-out  alternate;
+        }
+
+    }
+}
+
+        @-webkit-keyframes neon3 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+            }
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+            }
+        }
+
+        @-moz-keyframes neon3 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+            }
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+            }
+        }
+
+        @keyframes neon3 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+            }
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+        }
+        }
 
 .container {
     display: flex;
@@ -35,10 +87,10 @@ h2.progress-header {
 }
 
 
-h1,
-h2 {
+h1 {
     margin: 2vmin 0;
 }
+
 .question-text {
     /* font-family: 'Quicksand', sans-serif; */
     margin: 0 4vmin;
@@ -50,8 +102,8 @@ h2 {
 
 
 .answer {
-    width: 90vw;
-    max-width: 610px;
+    width: 900px;
+    max-width: 90vw;
     margin-top: 10px;
     padding: 1vmin;
 
