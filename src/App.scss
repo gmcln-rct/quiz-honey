@@ -146,22 +146,25 @@ h1 {
     cursor: pointer;
     transition: ease-in-out, width 0.35s ease-in-out;
 
-    .selected {
-        color: #4f4c4c;
-        background-color: #c8ffbb;
-    }
+
 
     &:hover {
-    color: #4f4c4c;
-    background-color: #c8ffbb;
+        color: #fff;
+        background-color: #0DD1C4;
     }
 
-    :focus {
-    outline: none;
+    &:focus {
+        color: #fff;
+        outline: none;
     }
 
 }
+.selected {
+    font-weight: 700;
 
+    -webkit-text-fill-color: #fff;
+    background-color: #18A2AB;
+}
 
 .letter {
     /* position: absolute; */
