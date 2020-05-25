@@ -44,15 +44,16 @@ html {
 
         // font-family: 'Pacifico', cursive;
         font-family: 'Audiowide', cursive;
-        font-size: calc(32px + (42 - 32) * ((100vw - 300px) / (1800 - 300)));
-        line-height: calc(36px + (48 - 36) * ((100vw - 300px) / (1800 - 300)));
+        font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(28px + (48 - 28) * ((100vw - 300px) / (1800 - 300)));
+        letter-spacing: 2px;
         color: #1673C4;
         //  -webkit-text-stroke: 0.5px #fff;
         //  -webkit-text-fill-color: #fff;
         text-decoration: none;
 
     text-shadow:
-        2px 2px 0 #fff,
+        3px 3px 0 #fff,
         -1px -1px 0 #fff,  
         1px -1px 0 #fff,
         -1px 1px 0 #fff,
@@ -102,12 +103,12 @@ html {
         }
 
 
-.progress-header {
+h2.progress-header {
     margin: 1vmin 0 2vmin 0;
     font-family: 'Lora', serif;
-    font-size: calc(32px + (42 - 32) * ((100vw - 300px) / (1800 - 300)));
+    font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
-    font-size:2.4rem;
+
     color: #ffc107;
 }
 
@@ -120,7 +121,7 @@ h1 {
 .question-text {
     /* font-family: 'Quicksand', sans-serif; */
     margin: 0 4vmin 2vmin 4vmin;
-        font-family: 'Lora', serif;
+    font-family: 'Lora', serif;
     font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
