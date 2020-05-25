@@ -267,13 +267,17 @@ export const questionsLibrary = [
   },
 ];
 
-function createQuestionSet () {
+// export function getRandomInt(max) {
+//     return Math.floor(Math.random() * Math.floor(max));
+// }
+
+
+export function createQuestionSet(questions) {
 
     function getRandomInt(max) {
-      return Math.floor(Math.random() * Math.floor(max));
+        return Math.floor(Math.random() * Math.floor(max));
     }
-    
-    const createQuestions = () => {
+
       let questionSet = [];
       let questionsLength = questionsLibrary.length;
       while (questionSet.length < 5) {
@@ -284,7 +288,6 @@ function createQuestionSet () {
         }
       }
       return questionSet;
-    };
 }
 
 

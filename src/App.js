@@ -1,4 +1,4 @@
-import React, {useReducer} from 'react';
+import React, {useState, useReducer} from 'react';
 
 import Header from './components/Header';
 import Progress from './components/Progress';
@@ -7,7 +7,7 @@ import Answers from './components/Answers';
 
 import QuizContext from './context/QuizContext';
 
-import { questionsLibrary } from "./components/QuestionFile";
+import { questionsLibrary, getRandomInt, createQuestionSet } from "./components/QuestionFile";
 
 import './reset.scss';
 import './App.scss';
@@ -24,15 +24,11 @@ import quizReducer from './reducers/QuizReducer';
 
 export default function App() {
 
-  
 
-  // let randNum = getRandomInt(15);
-  // console.log(randNum);
+  let questions = createQuestionSet(questionsLibrary);
 
+// let questions = questionsLibrary;
 
-let questions = questionsLibrary;
-
-// let questions = [];
 
   const initialState = {
     questions,
