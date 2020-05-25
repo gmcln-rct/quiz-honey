@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 
 .logo {
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     margin: 2vmin 0 0 0;
 }
@@ -138,6 +138,7 @@ h2 {
 }
 
 .btn-primary {
+    margin: 2vmin 0;
     color: #4f4c4c;
     background-color: #ffc107;
     font-weight: bold;
