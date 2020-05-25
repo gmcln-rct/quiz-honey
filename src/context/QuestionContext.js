@@ -4,11 +4,10 @@ import uuid from 'uuid/v1';
 export const QuestionContext = createContext();
 
 const QuestionContextProvider = (props) => {
-    const [Movies, setMovies] = useState([
-        { title: "Citizen Kane", director: "Orson Welles", year: "1941", id: 1 },
-        { title: "The Waterboy", director: "Frank Coraci", year: "1998", id: 2 },
-        { title: "Remains of the Day", director: "Frank Coraci", year: "1989", id: 3 },
-    ]);
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
 
     const createQuestions = () => {
         let questionSet = [];
@@ -23,7 +22,7 @@ const QuestionContextProvider = (props) => {
         return questionSet;
     }
 
-    const questions = [
+    const questionsLibrary = [
       
         {
             id: 6,
@@ -113,6 +112,9 @@ const QuestionContextProvider = (props) => {
         },
     ];
 
+    const [questions, setQuestions] = useState(questionSet);
+
+    
 
     return (
         <QuestionContext.Provider value={{ questions }}>

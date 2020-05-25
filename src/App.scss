@@ -1,48 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+body {
+    width: 100%;
+    height: 100%;
+
+
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    // margin: 0 1vmin;
     justify-content: center;
+    // height: 100vh;
+    // margin: 0 1vmin;
 
     color: white;
     text-align: center;
     /* background-color: #282c34; */
-    background: #AA076B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    // background: #AA076B;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .logo {
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
-    margin: 2vmin 0 0 0;
+    margin: 3vmin 0 0 0;
 }
 
 .header-section {
-
+    margin: 0;
     h2 {
-        /*Neon*/
+
         // font-family: 'Pacifico', cursive;
         font-family: 'Audiowide', cursive;
         font-size: calc(32px + (42 - 32) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(36px + (48 - 36) * ((100vw - 300px) / (1800 - 300)));
-        color: #FF2E9A;
+        color: #1673C4;
+        //  -webkit-text-stroke: 0.5px #fff;
+        //  -webkit-text-fill-color: #fff;
         text-decoration: none;
+
+    text-shadow:
+        2px 2px 0 #fff,
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         transition: all 1.0s;
         
         &:hover {
+            color: #0DB1DB;
+        //     -webkit-text-stroke: 1px #0DB1DB;
+        //  -webkit-text-fill-color: #fff;
             -webkit-animation: neon3 1.0s ease-in-out;
             -moz-animation: neon3 1.0s ease-in-out  alternate;
             animation: neon3 1.0s ease-in-out;
@@ -79,8 +102,8 @@
         }
 
 
-h2.progress-header {
-    margin: 4vmin 0 2vmin 0;
+.progress-header {
+    margin: 1vmin 0 2vmin 0;
     font-family: 'Lora', serif;
     font-size: calc(32px + (42 - 32) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
@@ -93,12 +116,14 @@ h1 {
     margin: 2vmin 0;
 }
 
+
 .question-text {
     /* font-family: 'Quicksand', sans-serif; */
-    margin: 0 4vmin;
-    font-family: 'Cardo', serif;
+    margin: 0 4vmin 2vmin 4vmin;
+        font-family: 'Lora', serif;
     font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
+    font-weight: 800;
 }
 
 
@@ -119,21 +144,23 @@ h1 {
     border-radius: 10px;
     cursor: pointer;
     transition: ease-in-out, width 0.35s ease-in-out;
-}
 
-.answer.selected {
+    .selected {
+        color: #4f4c4c;
+        background-color: #c8ffbb;
+    }
+
+    &:hover {
     color: #4f4c4c;
     background-color: #c8ffbb;
-}
+    }
 
-.answer:hover {
-    color: #4f4c4c;
-    background-color: #c8ffbb;
-}
-
-.answer:focus {
+    :focus {
     outline: none;
+    }
+
 }
+
 
 .letter {
     /* position: absolute; */
