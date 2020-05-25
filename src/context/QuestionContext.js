@@ -8,8 +8,21 @@ const QuestionContextProvider = (props) => {
         { title: "Citizen Kane", director: "Orson Welles", year: "1941", id: 1 },
         { title: "The Waterboy", director: "Frank Coraci", year: "1998", id: 2 },
         { title: "Remains of the Day", director: "Frank Coraci", year: "1989", id: 3 },
-
     ]);
+
+    const createQuestions = () => {
+        let questionSet = [];
+        let questionsLength = questionsLibrary.length;
+        while (questionSet.length < 5) {
+            let randNum = getRandomInt(questionsLength);
+
+            if (!questionSet.includes(questionsLibrary[randNum])) {
+                questionSet.push(questionsLibrary[randNum]);
+            }
+        }
+        return questionSet;
+    }
+
     const questions = [
       
         {

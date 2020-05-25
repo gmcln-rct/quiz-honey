@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answers from './components/Answers';
+
 import QuizContext from './context/QuizContext';
 
 import './reset.css';
@@ -237,18 +238,7 @@ export default function App() {
   // let randNum = getRandomInt(15);
   // console.log(randNum);
 
-  const createQuestions = () => {
-    let questionSet = [];
-    let questionsLength = questionsLibrary.length;
-    while (questionSet.length < 5) {
-      let randNum = getRandomInt(questionsLength);
-      
-      if(!questionSet.includes(questionsLibrary[randNum])) {
-        questionSet.push(questionsLibrary[randNum]);
-      }
-    }
-      return questionSet;
-  }
+ 
 
 
 
