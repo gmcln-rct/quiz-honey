@@ -3,6 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    // margin: 0 1vmin;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+    /* background-color: #282c34; */
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 
 .logo {
     max-width: 300px;
@@ -14,20 +32,20 @@
 
     h2 {
         /*Neon*/
-        font-family: 'Pacifico', cursive;
+        // font-family: 'Pacifico', cursive;
+        font-family: 'Audiowide', cursive;
         font-size: calc(32px + (42 - 32) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(36px + (48 - 36) * ((100vw - 300px) / (1800 - 300)));
-
-        color: #FFDD1B;
+        color: #FF2E9A;
         text-decoration: none;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
-        transition: all 0.5s;
-
+        transition: all 1.0s;
+        
         &:hover {
-            -webkit-animation: neon3 1.0s ease-in-out  alternate;
+            -webkit-animation: neon3 1.0s ease-in-out;
             -moz-animation: neon3 1.0s ease-in-out  alternate;
-            animation: neon3 1.0s ease-in-out  alternate;
+            animation: neon3 1.0s ease-in-out;
         }
 
     }
@@ -57,26 +75,10 @@
             }
             to {
                 text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+            }
         }
-        }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0 1vmin;
-    justify-content: center;
 
-    font-size: 23px;
-    color: white;
-    text-align: center;
-    /* background-color: #282c34; */
-    background: #AA076B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
 h2.progress-header {
     margin: 4vmin 0 2vmin 0;
     font-family: 'Lora', serif;
