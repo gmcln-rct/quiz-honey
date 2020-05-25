@@ -1,4 +1,4 @@
-import React, {useState, useReducer} from 'react';
+import React, {useReducer} from 'react';
 
 import Header from './components/Header';
 import Progress from './components/Progress';
@@ -7,7 +7,7 @@ import Answers from './components/Answers';
 
 import QuizContext from './context/QuizContext';
 
-import { questionsLibrary, getRandomInt, createQuestionSet } from "./components/QuestionFile";
+import { questionsLibrary, createQuestionSet } from "./components/QuestionFile";
 
 import './reset.scss';
 import './App.scss';
@@ -41,7 +41,6 @@ export default function App() {
 
   const [state,dispatch] = useReducer(quizReducer, initialState);
   const {currentQuestion, currentAnswer, answers, showResults, error} = state;
-
 
   // eslint-disable-next-line
   const question = questions[currentQuestion];
