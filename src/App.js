@@ -52,7 +52,7 @@ export default function App() {
     return <div className="error"> </div>;
   }
 
-  const renderResultMark = (question,answer) => {
+  const renderResultMark = (question, answer) => {
     if (question.correct_answer === answer.answer) {
       return <span className="correct">Guessed Correctly</span>
     } 
@@ -71,7 +71,6 @@ export default function App() {
           </div>
         )
         });
-
   };
 
   const restart = () => {

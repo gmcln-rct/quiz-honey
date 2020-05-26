@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0131e2369ace72421d79d1070997fcb5",
+    "revision": "bde1f897028b8a38f84e517c165e30f9",
     "url": "/index.html"
   },
   {
-    "revision": "468abc22edb908e8fcc1",
-    "url": "/static/css/main.6b9a8c58.chunk.css"
+    "revision": "8015e42331b16e167375",
+    "url": "/static/css/main.eaced1d8.chunk.css"
   },
   {
     "revision": "f12f8d1d729ba563066f",
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.54be4586.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "468abc22edb908e8fcc1",
-    "url": "/static/js/main.6153e95b.chunk.js"
+    "revision": "8015e42331b16e167375",
+    "url": "/static/js/main.1ae6c4a8.chunk.js"
   },
   {
     "revision": "be3702e3a369b996a57f",
     "url": "/static/js/runtime-main.c87a5f44.js"
   },
   {
-    "revision": "736301b8a77552a29fe09a50f603c873",
-    "url": "/static/media/quiz-badger-logo.736301b8.png"
+    "revision": "3ee9ec145565f862ad88926136c61049",
+    "url": "/static/media/quiz-badger-logo.3ee9ec14.png"
   }
 ]);
