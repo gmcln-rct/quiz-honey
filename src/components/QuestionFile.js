@@ -125,7 +125,7 @@ export const questionsLibrary = [
     answer_a: "It is the element on which the event occurred or the element that triggered the event.",
     answer_b: "It is the element on which we attach the event handler explicitly.",
     answer_c: "It is the element event that is handled during the current event loop.",
-    answer_d: "It is the parent element of the elment where the event occurred.",
+    answer_d: "It is the parent element of the element where the event occurred.",
     correct_answer:  "b",
     },
 
