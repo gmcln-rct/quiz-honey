@@ -1,4 +1,4 @@
-export const questionsLibrary = [
+ const questionsLibrary = [
     {
     id: 1,
     question:  "When running a JavaScript function, what is the difference between scope and context?",
