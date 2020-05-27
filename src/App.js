@@ -7,7 +7,7 @@ import Answers from './components/Answers';
 
 import QuizContext from './context/QuizContext';
 
-import { questionsLibrary, createQuestionSet } from "./components/QuestionFile";
+import {questionSet } from "./components/QuestionFile";
 
 import './reset.scss';
 import './App.scss';
@@ -24,10 +24,9 @@ import quizReducer from './reducers/QuizReducer';
 
 export default function App() {
 
+  let questions = questionSet;
 
-  let questions = createQuestionSet(questionsLibrary);
-
-// let questions = questionsLibrary;
+  // let questions = questionsLibrary;
 
 
   const initialState = {
@@ -60,6 +59,7 @@ export default function App() {
   }
 
   const renderResultsData = () => {
+    debugger
     return answers.map( answer => {
       const question = questions.find(
         question => question.id === answer.questionId

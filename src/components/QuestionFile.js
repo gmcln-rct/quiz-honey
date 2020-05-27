@@ -200,12 +200,11 @@ export const questionsLibrary = [
     },
 ];
 
-// export function getRandomInt(max) {
-//     return Math.floor(Math.random() * Math.floor(max));
-// }
 
 
-export function createQuestionSet(questions) {
+
+
+ function createQuestionSet(questions) {
 
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
@@ -224,4 +223,5 @@ export function createQuestionSet(questions) {
 }
 
 
+export const questionSet = createQuestionSet(questionsLibrary);
 
