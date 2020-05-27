@@ -59,13 +59,17 @@ export default function App() {
   }
 
   const renderResultsData = () => {
+    let questionCheck;
+    let answerCheck;
+    let correctCount = 0;
     
-    // questions.forEach( (el) => {
-    //   if (answers.key
+    // for (let i = 0; i < 5, i++) {
+    //    questionCheck = questions[i].id;
+    //     correctCount++;
+    //     console.log(correctCount);
     // }
-    //   if(question)
-    // )
-
+    
+   
     return answers.map( answer => {
       const question = questions.find(
         question => question.id === answer.questionId
