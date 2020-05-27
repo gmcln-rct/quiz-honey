@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../img/quiz-badger-logo.png';
 
-export default function Header() {
+export default function Logo() {
     return (
         <>
             <div className="logo-section">

@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 
-import Header from './components/Header';
+import Logo from './components/Logo';
 import Headline from './components/Headline';
 import Progress from './components/Progress';
 import Question from './components/Question';
@@ -115,7 +115,8 @@ export default function App() {
   if (showResults) {
     return (
       <div className="container results">
-        <Header />
+        <Logo />
+        <Headline />
         <h2>Results</h2>
         <ul>
           {renderResultsData()}
@@ -130,7 +131,7 @@ export default function App() {
     return (
       <QuizContext.Provider value={{ state, dispatch }}>
         <div className="container">
-          <Header />
+          <Logo />
           <Headline />
           <Progress total={questions.length} current={currentQuestion + 1} />
           <Question />
