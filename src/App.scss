@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
 
 
+// $quicksand = font-family: 'Quicksand', serif;
+
 html {
     width: 100%;
     height: 100%;
@@ -37,7 +39,7 @@ html {
 .logo {
     max-width: 250px;
     height: auto;
-    margin: 3vmin 0 0 0;
+    // margin: 3vmin 0 0 0;
 }
 
 .logo-section {
@@ -140,9 +142,10 @@ html {
 
 
 h2.progress-header {
-    margin: 1vmin 0 2vmin 0;
-    font-family: 'Lora', serif;
-    font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
+    margin: 1vmin 0 1vmin 0;
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Lora', serif;
+    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
 
     color: #ffc107;
@@ -293,4 +296,67 @@ h1 {
 
 #no-wrap {
     white-space: nowrap;
+}
+
+
+// ================================================
+// MEDIA QUERIES
+// ================================================
+
+// .___  ___.  _______  _______   __       ___           ______      __    __   _______ .______       __   _______     _______.
+// |   \/   | |   ____||       \ |  |     /   \         /  __  \    |  |  |  | |   ____||   _  \     |  | |   ____|   /       |
+// |  \  /  | |  |__   |  .--.  ||  |    /  ^  \       |  |  |  |   |  |  |  | |  |__   |  |_)  |    |  | |  |__     |   (----`
+// |  |\/|  | |   __|  |  |  |  ||  |   /  /_\  \      |  |  |  |   |  |  |  | |   __|  |      /     |  | |   __|     \   \    
+// |  |  |  | |  |____ |  '--'  ||  |  /  _____  \     |  `--'  '--.|  `--'  | |  |____ |  |\  \----.|  | |  |____.----)   |   
+// |__|  |__| |_______||_______/ |__| /__/     \__\     \_____\_____\\______/  |_______|| _| `._____||__| |_______|_______/    
+
+// ================================================
+
+@media only screen and (max-width: 1400px) {
+
+
+}
+
+@media only screen and (max-width: 720px) {
+
+  
+}
+
+// ==============Media Query Max 480px Width ==============
+//   __    __  .__   __.  _______   _______ .______          _  _      ___     ___   .______   ___   ___ 
+//  |  |  |  | |  \ |  | |       \ |   ____||   _  \        | || |    / _ \   / _ \  |   _  \  \  \ /  / 
+//  |  |  |  | |   \|  | |  .--.  ||  |__   |  |_)  |       | || |_  | (_) | | | | | |  |_)  |  \  V  /  
+//  |  |  |  | |  . `  | |  |  |  ||   __|  |      /        |__   _|  > _ <  | | | | |   ___/    >   <   
+//  |  `--'  | |  |\   | |  '--'  ||  |____ |  |\  \----.      | |   | (_) | | |_| | |  |       /  .  \  
+//   \______/  |__| \__| |_______/ |_______|| _| `._____|      |_|    \___/   \___/  | _|      /__/ \__\ 
+//                                             
+// ==============Media Query Max 480px Width ==============
+
+
+@media only screen and (max-width: 480px) {
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin: 8vmin 0 0 0;
+    // margin: 3vmin 0 0 0;
+}
+
+.logo-section {
+
+    width: 200px;
+    height: 200px;
+//     border-radius: 50%;
+//     box-shadow:
+//         inset 0 0 50px #fff,
+//         inset 20px 0 80px #f0f,
+//         inset -20px 0 80px #0ff,
+//         inset 20px 0 300px #f0f,
+//         inset -20px 0 300px #0ff,
+//         0 0 50px #fff,
+//         -10px 0 80px #f0f,
+//         10px 0 80px #0ff;
+// }
+}
+     
 }
