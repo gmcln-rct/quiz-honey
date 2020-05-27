@@ -7,7 +7,7 @@ import Answers from './components/Answers';
 
 import QuizContext from './context/QuizContext';
 
-import {questionSet } from "./components/QuestionFile";
+import {questionSet, quizResultsCount } from "./components/QuestionFile";
 
 import './reset.scss';
 import './App.scss';
@@ -59,11 +59,18 @@ export default function App() {
   }
 
   const renderResultsData = () => {
-    debugger
+    
+    // questions.forEach( (el) => {
+    //   if (answers.key
+    // }
+    //   if(question)
+    // )
+
     return answers.map( answer => {
       const question = questions.find(
         question => question.id === answer.questionId
         );
+        
 
         return (
           <div key={question.id}>
@@ -104,6 +111,7 @@ export default function App() {
   if (showResults) {
     return (
       <div className="container results">
+        <Header />
         <h2>Results</h2>
         <ul>
           {renderResultsData()}

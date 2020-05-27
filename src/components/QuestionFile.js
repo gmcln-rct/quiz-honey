@@ -1,4 +1,7 @@
- const questionsLibrary = [
+export const quizResultsCount = 0;
+
+
+const questionsLibrary = [
     {
     id: 1,
     question:  "When running a JavaScript function, what is the difference between scope and context?",

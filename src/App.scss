@@ -17,6 +17,7 @@ html {
     background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -198,7 +199,8 @@ h1 {
 /* Results */
 
 .results {
-
+    margin: 3vmin 0 0 0;
+    
     h2 {
         margin: 1vmin 0 2vmin 0;
         font-family: 'Roboto', sans-serif;
@@ -264,4 +266,11 @@ h1 {
     color: #4f4c4c;
     background-color: #ffc107;
     font-weight: bold;
+}
+
+
+// General
+
+#no-wrap {
+    white-space: nowrap;
 }
