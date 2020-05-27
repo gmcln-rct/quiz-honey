@@ -1,6 +1,7 @@
 import React, {useReducer} from 'react';
 
 import Header from './components/Header';
+import Headline from './components/Headline';
 import Progress from './components/Progress';
 import Question from './components/Question';
 import Answers from './components/Answers';
@@ -63,11 +64,11 @@ export default function App() {
     let answerCheck;
     let correctCount = 0;
     
-    // for (let i = 0; i < 5, i++) {
-    //    questionCheck = questions[i].id;
-    //     correctCount++;
-    //     console.log(correctCount);
-    // }
+    for (let i = 0; i < 5; i++) {
+       questionCheck = questions[i].id;
+        correctCount++;
+        console.log(correctCount);
+    }
     
    
     return answers.map( answer => {
@@ -75,7 +76,6 @@ export default function App() {
         question => question.id === answer.questionId
         );
         
-
         return (
           <div key={question.id}>
             {question.question} | {renderResultMark(question,answer)}
@@ -131,6 +131,7 @@ export default function App() {
       <QuizContext.Provider value={{ state, dispatch }}>
         <div className="container">
           <Header />
+          <Headline />
           <Progress total={questions.length} current={currentQuestion + 1} />
           <Question />
           {renderError()}
