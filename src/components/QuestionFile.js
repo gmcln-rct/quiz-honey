@@ -151,7 +151,7 @@ export const questionsLibrary = [
 
     {
     id: 16,
-    question:  "Which of the following is not a reserved work in JavaScript?",
+    question:  "Which of the following is not a reserved word in JavaScript?",
     answer_a: "const",
     answer_b: "type of",
     answer_c: "void",
