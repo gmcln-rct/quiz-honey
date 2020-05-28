@@ -231,6 +231,24 @@ const questionsLibrary = [
     answer_d: "Module, Prototype, Observer, Singleton",
     correct_answer: "d",
   },
+  {
+    id: 24,
+    question: "Which of the following is not a way to empty an array in JavaScript?",
+    answer_a: "Assinging an empty array [ ]",
+    answer_b: "Assigning array length to 0",
+    answer_c: "Using slice array function array.slice(0, array.length)",
+    answer_d: "Iterating through array, popping elements out of it",
+    correct_answer: "c",
+  },
+  {
+    id: 26,
+    question: "In CSS, what is the difference between the usage of an ID and a Class?",
+    answer_a: "An ID is a collective way to identify an element.",
+    answer_b: "ID and Class are both collective ways to identify a DOM element.",
+    answer_c: "ID's are not unique and multiple elements can have the same ID.",
+    answer_d: "Classes are not unique and multiple elements can have the same class.",
+    correct_answer: "d",
+  },
 ];
 
 
