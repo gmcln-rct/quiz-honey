@@ -39,7 +39,7 @@ html {
 .logo {
     max-width: 250px;
     height: auto;
-    // margin: 3vmin 0 0 0;
+    margin: 4vmin 0 0 0;
 }
 
 .logo-section {
@@ -335,12 +335,12 @@ h1 {
 
 @media only screen and (max-width: 480px) {
 
-.logo {
-    max-width: 150px;
-    height: auto;
-    margin: 8vmin 0 0 0;
-    // margin: 3vmin 0 0 0;
-}
+    .logo {
+        max-width: 150px;
+        height: auto;
+        margin: 8vmin 0 0 0;
+        // margin: 3vmin 0 0 0;
+    }
 
 .logo-section {
 

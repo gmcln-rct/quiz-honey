@@ -201,6 +201,36 @@ const questionsLibrary = [
     answer_d: "useRequest()",
     correct_answer:  "c",
     },
+
+  {
+    id: 21,
+    question: "What is functional programming, as opposed to object-oriented programming?",
+    answer_a: "Process that can cause side-effects, as long as they are immutable.",
+    answer_b: "Process of composing function imperatively, avoiding shared state, mutable data, and side-effects",
+    answer_c: "Process of composing pure functions, avoiding shared state, mutable data, and side-effects",
+    answer_d: "OOP tends to be radically simplified and easily recomposed for more generally reusable code compared to functional programming.",
+    correct_answer: "c",
+  },
+
+  {
+    id: 22,
+    question: "What is the difference between classical inheritance and prototypal inheritance?",
+    answer_a: " The first inherits from classes, like a blueprint, while the latter inherits directly from other objects. ",
+    answer_b: "Class inheritance always instatiated using a factory funciton.",
+    answer_c: " The first inherits from objects, like a blueprint, while the second inherits from prototypal classes.",
+    answer_d: "Unlike the former, the latter is typically instantiated via constructor functions with the `new` keyword. ",
+    correct_answer: "a",
+  },
+
+  {
+    id: 23,
+    question: "Which of the following are JavaScript design patterns?",
+    answer_a: "Module, Prototype, Observer, Singles",
+    answer_b: "Modular, Factorial, Observer, Singleton",
+    answer_c: "Modular, Prototypical, Observer, Singleton",
+    answer_d: "Module, Prototype, Observer, Singleton",
+    correct_answer: "d",
+  },
 ];
 
 
