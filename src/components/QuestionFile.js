@@ -58,7 +58,7 @@ const questionsLibrary = [
     answer_a: "An Property provides more details about an element like id, type, value etc, whereas the Attribute is the value assigned to the Property like type='text' or value='name'.",
     answer_b: "An Attribute provides more details about an element like id, type, value etc, whereas the Property is the value assigned to the Attrubute like type='text' or value='name'",
     answer_c: "A Property is any value that belongs to an object, and an Attribute describes it.",
-    answer_d: "Unline Attritbutes, in general a standard HTML Property automatically becomes a property of DOM objects.",
+    answer_d: "Unlike Attritbutes, in general a standard HTML Property automatically becomes a property of DOM objects.",
     correct_answer:  "b",
     },
 
