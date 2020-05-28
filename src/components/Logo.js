@@ -6,6 +6,7 @@ export default function Logo() {
         <>
             <div className="logo-section">
                 <img src={logo} alt="Honey Badger Institute Logo" className="logo"></img>
+                <h3>Can you please The Badger?</h3>
             </div>
         </>
     );
