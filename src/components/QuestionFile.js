@@ -261,9 +261,6 @@ const questionsLibrary = [
 ];
 
 
-
-
-
  function createQuestionSet(questions) {
 
     function getRandomInt(max) {
