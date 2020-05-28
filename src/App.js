@@ -29,7 +29,6 @@ export default function App() {
 
   // let questions = questionsLibrary;
 
-
   const initialState = {
     questions,
     currentQuestion: 0,
