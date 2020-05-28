@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
 
@@ -58,8 +56,6 @@ html {
     //   position: absolute;
 
     h2 {
-
-        // font-family: 'Pacifico', cursive;
         font-family: 'Warnes', cursive;
         // font-family: 'Audiowide', cursive;
         font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
@@ -232,9 +228,6 @@ h1 {
 }
 
 
-
-
-
 .error {
     color: #f27c7c;
     font-weight: 800;
@@ -293,15 +286,7 @@ h1 {
 
 // ================================================
 
-@media only screen and (max-width: 1400px) {
 
-
-}
-
-@media only screen and (max-width: 720px) {
-
-  
-}
 
 // ==============Media Query Max 480px Width ==============
 //   __    __  .__   __.  _______   _______ .______          _  _      ___     ___   .______   ___   ___ 
