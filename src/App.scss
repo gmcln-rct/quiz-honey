@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
@@ -80,22 +79,12 @@ html {
 
           animation: glow 1s ease-in-out infinite alternate;
 
-
-    // text-shadow:
-    //     3px 3px 0 #fff,
-    //     -1px -1px 0 #fff,  
-    //     1px -1px 0 #fff,
-    //     -1px 1px 0 #fff,
-    //     1px 1px 0 #fff;
-
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         transition: all 1.0s;
         
         &:hover {
             color: #0DB1DB;
-        //     -webkit-text-stroke: 1px #0DB1DB;
-        //  -webkit-text-fill-color: #fff;
             -webkit-animation: neon3 1.0s ease-in-out;
             -moz-animation: neon3 1.0s ease-in-out  alternate;
             animation: neon3 1.0s ease-in-out;
@@ -144,7 +133,6 @@ html {
 h2.progress-header {
     margin: 1vmin 0 1vmin 0;
     font-family: 'Roboto', sans-serif;
-    // font-family: 'Lora', serif;
     font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
 
