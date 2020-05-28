@@ -249,6 +249,15 @@ const questionsLibrary = [
     answer_d: "Classes are not unique and multiple elements can have the same class.",
     correct_answer: "d",
   },
+  {
+    id: 27,
+    question: "What is the correct order of CSS Specificity?",
+    answer_a: "DOM Elements, ID, Class, Attribute",
+    answer_b: "Class, ID, Attribute, Elements",
+    answer_c: "Style Attribute, ID, Class/Pseudo-Class/Attribute, Elements",
+    answer_d: "Pseudo-Class, ID, Class, Elements",
+    correct_answer: "c",
+  },
 ];
 
 

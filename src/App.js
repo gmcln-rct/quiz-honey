@@ -122,7 +122,7 @@ export default function App() {
           {renderResultsData()}
         </ul>
         <button className="btn btn-primary" onClick={restart}>
-          Restart
+          Start New Quiz
           </button>
       </div>
     )
