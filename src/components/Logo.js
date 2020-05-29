@@ -6,9 +6,7 @@ export default function Logo() {
         <>
             <div className="logo-section">
                 <img src={logo} alt="Honey Badger Institute Logo" alt="Honey Badger Institute Logo" aria-label="Honey Badger Insitute Logo" className="logo"></img>
-                <h3>Can you please <span id="nowrap">
-                    The Badger?</span></h3>
-                
+                <h3>Can you please <span id="nowrap">The Badger?</span></h3>
             </div>
         </>
     );

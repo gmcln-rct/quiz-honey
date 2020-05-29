@@ -7,10 +7,14 @@
 // $quicksand = font-family: 'Quicksand', serif;
 
 html {
-    width: 100%;
-    height: 100%;
+
     margin: 0;
 
+
+}
+
+body {
+    height: 100vh;
     background: #AA076B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -171,7 +175,7 @@ h1 {
     border: 1px solid #fff;
     border-radius: 10px;
     cursor: pointer;
-    transition: ease-in-out, width 0.1s ease-in-out;
+    transition: ease-in-out, width 0.2s ease-in-out;
 
     &:hover {
         color: #fff;
@@ -225,12 +229,14 @@ h1 {
     }
 
     span.correct {
-        color: #0DB1DB;
+        color: #fff;
         font-weight: 800;
+        animation: glow 1s ease-in-out infinite alternate;
     }
     span.failed {
-        color: #f27c7c;
+        color: #AA076B;
         font-weight: 800;
+        animation: glow 1s ease-in-out infinite alternate;
     }
 
 }
