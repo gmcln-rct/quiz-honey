@@ -16,6 +16,9 @@ html {
     background: linear-gradient(to top, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#nowrap {
+    white-space: nowrap;
+}
 
 .container {
     display: flex;
@@ -53,8 +56,8 @@ html {
         h3 {
             margin-top: -10px;
             font-family: 'Quicksand',sans-serif;
-            font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (1800 - 300)));
-            line-height: calc(18px + (22 - 18) * ((100vw - 300px) / (1800 - 300)));
+            font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1800 - 300)));
+            line-height: calc(22px + (22 - 22) * ((100vw - 300px) / (1800 - 300)));
             font-weight: 700;
             text-decoration: none;
 
@@ -63,7 +66,7 @@ html {
 }
 
 .header-section {
-    margin: 0;
+    margin: 4vmin 0 0 0;
     //   position: absolute;
 
     h2 {
@@ -150,8 +153,8 @@ h1 {
     margin: 0 6vmin 2vmin 6vmin;
 
     font-family: 'Roboto', sans-serif;
-    font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
-    line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
+    font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (1800 - 300)));
+    line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
 }
 
