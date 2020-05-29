@@ -234,7 +234,7 @@ const questionsLibrary = [
   {
     id: 24,
     question: "Which of the following is not a way to empty an array in JavaScript?",
-    answer_a: "Assinging an empty array [ ]",
+    answer_a: "Assigning an empty array [ ]",
     answer_b: "Assigning array length to 0",
     answer_c: "Using slice array function array.slice(0, array.length)",
     answer_d: "Iterating through array, popping elements out of it",
