@@ -15,4 +15,4 @@ The goal of this app was to learen more about the uses of React Hooks and Contex
 
 Honeybadger Institute is a work-in-progress. The functionality is still be built out and more questions are being added. (More Honey Badger attitude is being added as well.)
 
-![Honey Badger Logo] (https://projects-external.s3.amazonaws.com/ogimages/ogimage-honeybadger.jpg)
+![Honey Badger Logo] ("https://projects-external.s3.amazonaws.com/ogimages/ogimage-honeybadger.jpg")
