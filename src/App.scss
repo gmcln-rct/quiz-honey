@@ -38,6 +38,27 @@ body {
     max-width: 250px;
     height: auto;
     margin: 5vmin 0 0 0;
+
+    z-index: 50;
+    animation: blur 2s ease-in;
+    -webkit-animation: blur 2s ease-in;
+    -moz-animation: blur 2s ease-in;
+
+}
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+  }
+  100% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+  }
 }
 
 .logo-section {
@@ -68,6 +89,8 @@ body {
             animation: glow 1s ease-in-out infinite alternate;
         }
 }
+
+
 
 .header-section {
     margin: 4vmin 0 0 0;

@@ -23,9 +23,9 @@ export default function Answer(props) {
         className={classes.join(' ')} 
         onClick={handleClick}>
 
-            <span className="letter">
+
                 {props.letter}. {props.answer}
-            </span>
+
 
 
         </button>
