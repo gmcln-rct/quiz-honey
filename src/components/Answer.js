@@ -16,14 +16,18 @@ export default function Answer(props) {
         classes.push('selected');
     }
 
+     
     return (
         <button 
         value={props.letter} 
         className={classes.join(' ')} 
         onClick={handleClick}>
+
             <span className="letter">
                 {props.letter}. {props.answer}
             </span>
+
+
         </button>
     );
 }
