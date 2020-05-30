@@ -1,4 +1,4 @@
-![Honey Badger Logo] (/src/img/ogimage-honeybadger.jpg)
+![Honey Badger Logo] (src/img/ogimage-honeybadger.jpg)
 
 # Honey Badger Institute
 
