@@ -1,6 +1,5 @@
 {
-  "homepage": "https://www.honeybadger.institute",
-  "name": "HoneyBadger-Institute",
+  "name": "HoneyBadgerInstitute",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
