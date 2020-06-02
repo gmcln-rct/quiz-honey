@@ -3,7 +3,7 @@
 
 # Honey Badger Institute
 
-Honey Badger Institute is a web app to help beginner programmers to learn JavaScript, React, CSS and other frontend tools, through tough, Honey Badger-style love.
+The Honey Badger Institute of Higher Learning is a web app created to help rookie programmers test their knowledge of JavaScript, React, CSS and other frontend tools, through tough, Honey Badger-style love.
 
 ## Motivation
 The goal of this app was to use React Hooks and Context API in a new way, while also creating a useful learning tool for frontend developers.
@@ -18,4 +18,4 @@ The goal of this app was to use React Hooks and Context API in a new way, while 
 
 ## Build status
 
-Honeybadger Institute is a work-in-progress. The functionality is still being built out and more questions are being added. (More Honey Badger attitude is being added as well.)
+The Honey Badger Institute is a work-in-progress -- both in terms of functionality and the number of questions. (More Honey Badger attitude is being added as well.)
