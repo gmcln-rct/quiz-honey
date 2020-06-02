@@ -116,7 +116,7 @@ export default function App() {
       <div className="container results">
         <Logo />
         <Headline />
-        <h2>Results</h2>
+        <h3>Results</h3>
         <ul>
           {renderResultsData()}
         </ul>

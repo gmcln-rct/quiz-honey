@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 
 // $quicksand = font-family: 'Quicksand', serif;
@@ -133,6 +134,16 @@ body {
         }
         }
 
+
+        @keyframes glow-red {
+        from {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff2200, 0 0 20px #ff2200, 0 0 25px #ff2200, 0 0 30px #ff2200, 0 0 35px #ff2200;
+        }
+        to {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff2200, 0 0 40px #ff2200, 0 0 50px #ff2200, 0 0 60px #ff2200, 0 0 70px #ff2200;
+        }
+        }
+
         @-webkit-keyframes neon3 {
             from {
                 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
@@ -239,7 +250,8 @@ h1 {
     
     h2 {
         margin: 1vmin 0 2vmin 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Warnes', cursive;
+        // font-family: 'Roboto', sans-serif;
         font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 800;
 
@@ -258,9 +270,9 @@ h1 {
         animation: glow 1s ease-in-out infinite alternate;
     }
     span.failed {
-        color: #AA076B;
+        color: #fff6a9;
         font-weight: 800;
-        animation: glow 1s ease-in-out infinite alternate;
+        animation: glow-red 1s ease-in-out infinite alternate;
     }
 
 }
