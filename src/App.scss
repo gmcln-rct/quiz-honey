@@ -198,7 +198,7 @@ h1 {
     width: 900px;
     max-width: 90vw;
     margin-top: 10px;
-    padding: 1vmin;
+    padding: 1vmin 2vmin;
 
     font-family: 'Roboto', sans-serif;
     font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
@@ -310,7 +310,7 @@ h1 {
 }
 
 .btn-primary {
-    margin: 2vmin 0;
+    margin: 4vmin 0;
     color: #4f4c4c;
     background-color: #ffc107;
     font-weight: bold;

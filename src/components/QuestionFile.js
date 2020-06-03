@@ -321,6 +321,25 @@ const questionsLibrary = [
     answer_d: " a {underline:none;}",
     correct_answer: "a",
   },
+  {
+    id: 33,
+    question: "What does the BEM methodology stand for?",
+    answer_a: "Block, Element, Model",
+    answer_b: "Block, Element, Modifier",
+    answer_c: "Block, Elements, Models",
+    answer_d: "Badgers, Eat, Mongooses",
+    correct_answer: "b",
+  },
+
+  {
+    id: 34,
+    question: "Which is the appropriate CSS syntax for a general sibling combinator?",
+    answer_a: "Which is the appropriate CSS syntax for a general sibling combinator?",
+    answer_b: "general-sibling p {  }",
+    answer_c: "p ~ p {  }",
+    answer_d: "p & p {  }",
+    correct_answer: "c",
+  },
 ];
 
 
