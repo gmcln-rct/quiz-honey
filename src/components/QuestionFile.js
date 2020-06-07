@@ -304,7 +304,7 @@ const questionsLibrary = [
 
   {
     id: 31,
-    question: "What is the correcdt syntax for comments in CSS?",
+    question: "What is the correct syntax for comments in CSS?",
     answer_a: "/* */ ",
     answer_b: "<* *>",
     answer_c: "<!-- -->",
@@ -338,6 +338,34 @@ const questionsLibrary = [
     answer_b: "general-sibling p {  }",
     answer_c: "p ~ p {  }",
     answer_d: "p & p {  }",
+    correct_answer: "c",
+  },
+  {
+    id: 35,
+    question: "In JavaScript, what function do you use to convert a string into any base integer in JavaScript?",
+    answer_a: "parseInteger()",
+    answer_b: "parseInt()",
+    answer_c: "parseStringtoInt()",
+    answer_d: "parseIntBase()",
+    correct_answer: "b",
+  },
+
+  {
+    id: 36,
+    question: "In JavaScript, explain the difference between '==' and '==='?",
+    answer_a: "They are functionally the same.",
+    answer_b: "The former checks for equality while the latter checks if value is an Integer.",
+    answer_c: "The former checks only for equality in value whereasthe latter returns false if either the value or the type of the two variables are different.",
+    answer_d: "The former checks only for equality in value whereasthe latter returns true if either the value or the type of the two variables are different.",
+    correct_answer: "c",
+  },
+  {
+    id: 37,
+    question: "In JavaScript, what would be the result of 3+2+'7'?",
+    answer_a: "12",
+    answer_b: "327",
+    answer_c: "57",
+    answer_d: "NaN",
     correct_answer: "c",
   },
 ];
