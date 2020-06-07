@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.34a60934.chunk.css",
+    "main.css": "/static/css/main.6926a1f9.chunk.css",
     "main.js": "/static/js/main.c0aeb0f1.chunk.js",
     "main.js.map": "/static/js/main.c0aeb0f1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.82454778.js",
@@ -8,16 +8,16 @@
     "static/js/2.b69e89f2.chunk.js": "/static/js/2.b69e89f2.chunk.js",
     "static/js/2.b69e89f2.chunk.js.map": "/static/js/2.b69e89f2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4e08843f610c907e5bbee5e8f912607c.js": "/precache-manifest.4e08843f610c907e5bbee5e8f912607c.js",
+    "precache-manifest.76a0f8dd74bb669e7ae2d0e573dbde2c.js": "/precache-manifest.76a0f8dd74bb669e7ae2d0e573dbde2c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.34a60934.chunk.css.map": "/static/css/main.34a60934.chunk.css.map",
+    "static/css/main.6926a1f9.chunk.css.map": "/static/css/main.6926a1f9.chunk.css.map",
     "static/js/2.b69e89f2.chunk.js.LICENSE.txt": "/static/js/2.b69e89f2.chunk.js.LICENSE.txt",
     "static/media/quiz-badger-logo.png": "/static/media/quiz-badger-logo.3ee9ec14.png"
   },
   "entrypoints": [
     "static/js/runtime-main.82454778.js",
     "static/js/2.b69e89f2.chunk.js",
-    "static/css/main.34a60934.chunk.css",
+    "static/css/main.6926a1f9.chunk.css",
     "static/js/main.c0aeb0f1.chunk.js"
   ]
 }
