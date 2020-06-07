@@ -287,18 +287,18 @@ const questionsLibrary = [
     question: "In CSS, name three types of selectors?",
     answer_a: "ID, tag, Class",
     answer_b: "ID-tag, Class, Name",
-    answer_c: "",
-    answer_d: "",
-    correct_answer: "",
+    answer_c: "Descendant Combinator, ID, Pseudo-Descendant",
+    answer_d: "Descendant Combinator, ID, Pseudo-Class",
+    correct_answer: "d",
   },
 
   {
     id: 30,
     question: "Which is the correct HTML for referring to an external style sheet?",
-    answer_a: " <style src='mystyle.css'>",
+    answer_a: "<style src='mystyle.css'>",
     answer_b: "<style rel='stylesheet' type='text / css' href='mystyle.css'>",
     answer_c: "<link rel='stylesheet' type='text / css' href='mystyle.css'>",
-    answer_d: " <link>mystyle.css</link>",
+    answer_d: "<link>mystyle.css</link>",
     correct_answer: "c",
   },
 
