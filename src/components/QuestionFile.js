@@ -368,6 +368,15 @@ const questionsLibrary = [
     answer_d: "NaN",
     correct_answer: "c",
   },
+  {
+    id: 38,
+    question: "In CSS, what is the difference between visibility:hidden vs. display: none?",
+    answer_a: "They are functionally the same.",
+    answer_b: "visibility:hidden removes the element from the DOM and does not show it to the user. display:none displays nothing and will not be available in the DOM.",
+    answer_c: "visibility:hidden neither occupies the space nor is displayed to the user. display:none will not be available in the DOM but can display.",
+    answer_d: "visibility:hidden keeps the element in the page but does not show it to the user. display:none will not be available in the DOM.",
+    correct_answer: "d",
+  },
 ];
 
 
