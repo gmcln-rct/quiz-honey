@@ -61,16 +61,6 @@ export default function App() {
   }
 
   const renderResultsData = () => {
-    // let questionCheck;
-    // let correctCount = 0;
-    
-    // for (let i = 0; i < 5; i++) {
-    //   if (questionCheck = questions[i].id)
-    //     correctCount++;
-    // }
-    // if (correctCount > 2 )
-    // { console.log(correctCount) }
-
    
     const mapAnswers = answers.map(answer => {
       const question = questions.find(
@@ -86,7 +76,7 @@ export default function App() {
 
     return (
       <div>
-        <p> You got {correctCount} correct</p>
+        <h4> You got {correctCount} correct</h4>
         {mapAnswers}
       </div>
     )
@@ -125,7 +115,7 @@ export default function App() {
       <div className="container results">
         <Logo />
         <Headline />
-        <h4>Your Results</h4>
+        {/* <h4>Your Results</h4> */}
         <ul>
           {renderResultsData()}
         </ul>
