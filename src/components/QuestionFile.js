@@ -244,7 +244,7 @@ const questionsLibrary = [
 
   {
     id: 25,
-    question: "Which of the following are CSS frameworks?",
+    question: "Which of the following is not a CSS framework?",
     answer_a: "Bootstrap",
     answer_b: "Foundations",
     answer_c: "Foundation",
