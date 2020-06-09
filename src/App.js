@@ -60,27 +60,34 @@ export default function App() {
 
   const renderResultsData = () => {
     let questionCheck;
-    let answerCheck;
     let correctCount = 0;
     
     for (let i = 0; i < 5; i++) {
-       questionCheck = questions[i].id;
+      if (questionCheck = questions[i].id)
         correctCount++;
-        console.log(correctCount);
     }
-    
+    if (correctCount > 2 )
+    { console.log(correctCount) }
+
    
-    return answers.map( answer => {
+    const mapAnswers = answers.map(answer => {
       const question = questions.find(
         question => question.id === answer.questionId
-        );
-        
-        return (
-          <div key={question.id}>
-            {question.question} | {renderResultMark(question,answer)}
-          </div>
-        )
-        });
+      );
+
+      return (
+        <div key={question.id}>
+          {question.question} | {renderResultMark(question, answer)}
+        </div>
+      )
+      });
+
+    return (
+      <div>
+        <p> You got {correctCount} correct</p>
+        {mapAnswers}
+      </div>
+    )
   };
 
   const restart = () => {
