@@ -26,6 +26,7 @@ import quizReducer from './reducers/QuizReducer';
 export default function App() {
 
   let questions = questionSet;
+  let correctCount = 0;
 
   // let questions = questionsLibrary;
 
@@ -53,21 +54,22 @@ export default function App() {
 
   const renderResultMark = (question, answer) => {
     if (question.correct_answer === answer.answer) {
+      correctCount++;
       return <span className="correct">Guessed Correctly</span>
     } 
     return <span className="failed">Utter Failure</span> 
   }
 
   const renderResultsData = () => {
-    let questionCheck;
-    let correctCount = 0;
+    // let questionCheck;
+    // let correctCount = 0;
     
-    for (let i = 0; i < 5; i++) {
-      if (questionCheck = questions[i].id)
-        correctCount++;
-    }
-    if (correctCount > 2 )
-    { console.log(correctCount) }
+    // for (let i = 0; i < 5; i++) {
+    //   if (questionCheck = questions[i].id)
+    //     correctCount++;
+    // }
+    // if (correctCount > 2 )
+    // { console.log(correctCount) }
 
    
     const mapAnswers = answers.map(answer => {
