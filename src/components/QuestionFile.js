@@ -414,6 +414,15 @@ const questionsLibrary = [
     answer_d: "XMLHttpRequest",
     correct_answer: "b",
   },
+  {
+    id: 43,
+    question: "Which of the following is not an API verb type in JavaScript?",
+    answer_a: "POST",
+    answer_b: "GET",
+    answer_c: "DELETE",
+    answer_d: "FETCH",
+    correct_answer: "d",
+  },
 ];
 
 
