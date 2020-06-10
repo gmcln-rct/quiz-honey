@@ -76,7 +76,7 @@ export default function App() {
 
     return (
       <div>
-        <h4> You got {correctCount} correct</h4>
+        <h4>Wow, you got {correctCount} correct</h4>
         {mapAnswers}
       </div>
     )
