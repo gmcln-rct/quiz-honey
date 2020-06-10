@@ -377,6 +377,25 @@ const questionsLibrary = [
     answer_d: "visibility:hidden keeps the element in the page but does not show it to the user. display:none will not be available in the DOM.",
     correct_answer: "d",
   },
+  {
+    id: 39,
+    question: "In JavaScript, which of the following is the best way to determine if a value is a number?",
+    answer_a: "parseInt()",
+    answer_b: "isNaN()",
+    answer_c: "isNum()",
+    answer_d: "Number()",
+    correct_answer: "b",
+  },
+
+  {
+    id: 40,
+    question: "In JavaScript, which of the following is not a state in Promises?",
+    answer_a: "fulfilled",
+    answer_b: "rejected",
+    answer_c: "settled",
+    answer_d: "await",
+    correct_answer: "d",
+  },
 ];
 
 
