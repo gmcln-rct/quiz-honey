@@ -396,6 +396,24 @@ const questionsLibrary = [
     answer_d: "await",
     correct_answer: "d",
   },
+  {
+    id: 41,
+    question: "What of the following is an accurate description of local storage, as opposed to session storage?",
+    answer_a: "Any changes made are saved and available for the current page in that tab until it is closed.",
+    answer_b: "Any changes made are saved and available for the current and next session.",
+    answer_c: "It is never deleted, and changes made are saved and available for all current and future visits to the site.",
+    answer_d: "It persists until explicitly deleted, and changes made are saved and available for all current and future visits to the site.",
+    correct_answer: "d",
+  },
+  {
+    id: 42,
+    question: "Which of the following is not used to make an API call in JavaScript?",
+    answer_a: "Axios",
+    answer_b: "APIHttpRequest",
+    answer_c: "fetch",
+    answer_d: "XMLHttpRequest",
+    correct_answer: "b",
+  },
 ];
 
 
