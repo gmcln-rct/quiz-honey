@@ -55,9 +55,9 @@ export default function App() {
   const renderResultMark = (question, answer) => {
     if (question.correct_answer === answer.answer) {
       correctCount++;
-      return <span className="correct">Guessed Correctly</span>
+      return <span className="correct" id="nowrap">Guessed Correctly</span>
     } 
-    return <span className="failed">Utter Failure</span> 
+    return <span className="failed" id="nowrap">Utter Failure</span> 
   }
 
   const renderResultsData = () => {
