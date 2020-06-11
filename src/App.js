@@ -10,7 +10,7 @@ import QuizContext from './context/QuizContext';
 
 import {questionSet, quizResultsCount } from "./components/QuestionFile";
 
-import './reset.scss';
+
 import './App.scss';
 
 import { SET_ANSWERS, 

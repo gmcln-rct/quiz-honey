@@ -110,7 +110,7 @@ body {
     //   position: absolute;
 
     h2 {
-        padding: 2vmin 0;
+        // padding: 2vmin 0;
         font-family: 'Warnes', cursive;
         // font-family: 'Audiowide', cursive;
         font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
@@ -195,7 +195,7 @@ body {
 
 
 h2.progress-header {
-    margin: 0 0 2vmin 0;
+    margin: 0 0 1vmin 0;
     font-family: 'Roboto', sans-serif;
     font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
