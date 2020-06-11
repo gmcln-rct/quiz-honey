@@ -4,14 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
-
+@import './reset.scss';
 // $quicksand = font-family: 'Quicksand', serif;
 
 html {
-
-    margin: 0;
-
-
+    // margin: 0;
 }
 
 body {
@@ -78,7 +75,7 @@ body {
 }
 
 .logo-section {
-    margin: 2vmin 0 0 0;
+    margin: 2vmin 0 2vmin 0;
     top: calc(50% - 150px);
     left: calc(50% - 150px);
     width: 300px;
@@ -109,15 +106,16 @@ body {
 
 
 .header-section {
-    margin: 4vmin 0 0 0;
+    margin: 3vmin 0 0 0;
     //   position: absolute;
 
     h2 {
+        padding: 2vmin 0;
         font-family: 'Warnes', cursive;
         // font-family: 'Audiowide', cursive;
-        font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
-        line-height: calc(28px + (48 - 28) * ((100vw - 300px) / (1800 - 300)));
-        letter-spacing: 2px;
+        font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(28px + (38 - 28) * ((100vw - 300px) / (1800 - 300)));
+        letter-spacing: 1px;
         // color: #1673C4;
         color: #fff;
         //  -webkit-text-stroke: 0.5px #fff;
@@ -276,10 +274,11 @@ h1 {
     // padding: 0;
     
     h2 {
-        margin: 1vmin 0 2vmin 0;
+        margin: 1vmin 1vmin 2vmin 1vmin;
         font-family: 'Warnes', cursive;
         // font-family: 'Roboto', sans-serif;
         font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 800;
 
         color: #ffc107;
@@ -389,6 +388,10 @@ h1 {
 
         width: 200px;
         height: 200px;
+    }
+
+    .header-section {
+        margin: 7vmin 0 0 0;
     }
      
 }
