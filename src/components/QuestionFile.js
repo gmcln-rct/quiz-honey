@@ -423,6 +423,25 @@ const questionsLibrary = [
     answer_d: "FETCH",
     correct_answer: "d",
   },
+  {
+    id: 44,
+    question: "What are the case types of the following variable names, respectively: randomNumber, random-number, RandomNumber",
+    answer_a: "camel, camel-kebab, snake",
+    answer_b: "camel, kebab, pascal",
+    answer_c: "camel, snake, bactrian camel",
+    answer_d: "camel, snake, upper camel",
+    correct_answer: "b",
+  },
+
+  {
+    id: 45,
+    question: "Which statment is true about prototypal Inheritance in JavaScript?",
+    answer_a: "Every object has a prototype property, where you can add methods to it and when you create another object from these, the newly created object will automatically inherit its parent’s property.",
+    answer_b: "Prototypal inheritance is a way for one object's class to extend another class. ",
+    answer_c: "Proptypes inherit from classes and create subclass relationships.",
+    answer_d: "Class taxonomies are an automatic side-effect of prototypal inheritance.",
+    correct_answer: "a",
+  },
 ];
 
 
