@@ -83,9 +83,10 @@ export default function App() {
 
     return (
       <div>
-        <h4>Wow, you got {correctCount} correct</h4>
+        <h4>You got {correctCount} correct</h4>
         <h5>{displayComment}</h5>  
-      {mapAnswers}
+        <hr />
+        {mapAnswers}
       </div>
     )
   };

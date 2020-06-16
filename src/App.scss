@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Warnes&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
@@ -142,6 +142,8 @@ body {
         font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 700;
+
+        color: #ffc107
     }
 
     h5 {
@@ -150,26 +152,28 @@ body {
         font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 700;
+        font-style: italic;
+
     }
 
-        @keyframes glow {
-        from {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 12px #0073e6, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 22px #0073e6, 0 0 28px #0073e6;
-        }
-        to {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 24px #0073e6, 0 0 28px #0073e6, 0 0 38px #0073e6, 0 0 45px #0073e6, 0 0 55px #0073e6;
-        }
-        }
+    @keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 12px #0073e6, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 22px #0073e6, 0 0 28px #0073e6;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 24px #0073e6, 0 0 28px #0073e6, 0 0 38px #0073e6, 0 0 45px #0073e6, 0 0 55px #0073e6;
+    }
+    }
 
 
-        @keyframes glow-red {
-        from {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff2200, 0 0 15px #ff2200, 0 0 25px #ff2200, 0 0 30px #ff2200, 0 0 35px #ff2200;
-        }
-        to {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 24px #ff2200, 0 0 28px #ff2200, 0 0 30px #ff2200, 0 0 45px #ff2200, 0 0 55px #ff2200;
-        }
-        }
+    @keyframes glow-red {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff2200, 0 0 15px #ff2200, 0 0 25px #ff2200, 0 0 30px #ff2200, 0 0 35px #ff2200;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 24px #ff2200, 0 0 28px #ff2200, 0 0 30px #ff2200, 0 0 45px #ff2200, 0 0 55px #ff2200;
+    }
+    }
 
         // @-webkit-keyframes neon3 {
         //     from {
