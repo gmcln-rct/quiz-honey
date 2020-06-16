@@ -145,10 +145,10 @@ body {
 
         @keyframes glow {
         from {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 12px #0073e6, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 22px #0073e6, 0 0 28px #0073e6;
         }
         to {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 24px #0073e6, 0 0 28px #0073e6, 0 0 38px #0073e6, 0 0 45px #0073e6, 0 0 55px #0073e6;
         }
         }
 
@@ -196,7 +196,7 @@ h2.progress-header {
     font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 800;
 
-    color: #ffc107;
+    color: #f0da98;
 }
 
 h1 {
@@ -273,11 +273,11 @@ h1 {
         margin: 1vmin 1vmin 2vmin 1vmin;
         font-family: 'Warnes', cursive;
         // font-family: 'Roboto', sans-serif;
-        font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
+        font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 800;
 
-        color: #ffc107;
+        color: #fff;
     }
 
     ul {
