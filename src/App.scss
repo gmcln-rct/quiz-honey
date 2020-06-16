@@ -264,15 +264,11 @@ h1 {
 /* Results */
 
 .results {
-
-    // height: 100%!important;
-    // margin: 3vmin 0 0 0;
-    // padding: 0;
     
     h2 {
         margin: 1vmin 1vmin 2vmin 1vmin;
+
         font-family: 'Warnes', cursive;
-        // font-family: 'Roboto', sans-serif;
         font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 800;
@@ -291,6 +287,7 @@ h1 {
         font-weight: 800;
         animation: glow 1s ease-in-out infinite alternate;
     }
+    
     span.failed {
         color: #fff6a9;
         font-weight: 800;

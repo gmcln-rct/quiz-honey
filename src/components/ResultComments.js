@@ -16,23 +16,18 @@ const resultComments = [
 
 
 function createResultComment() {
+    let commentsLength = resultComments.length;
 
     function getRandomInt() {
-        return Math.floor(Math.random() * Math.floor(11));
+        return Math.floor(Math.random() * commentsLength);
     }
 
-    let questionSet = [];
-    let questionsLength = questionsLibrary.length;
-    while (questionSet.length < 5) {
-        let randNum = getRandomInt(questionsLength);
+    let randomNum = getRandomInt();
 
-        if (!questionSet.includes(questionsLibrary[randNum])) {
-            questionSet.push(questionsLibrary[randNum]);
-        }
-    }
-    return questionSet;
+    let randomResultComment = resultComments(randomNum);
+
+    return randomResultComment;
 }
 
-
-export const questionSet = createQuestionSet(questionsLibrary);
+export const resultComment = createResultComment();
 
