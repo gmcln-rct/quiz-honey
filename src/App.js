@@ -9,6 +9,7 @@ import Answers from './components/Answers';
 import QuizContext from './context/QuizContext';
 
 import {questionSet, quizResultsCount } from "./components/QuestionFile";
+import { resultComment } from "./components/ResultComments";
 
 
 import './App.scss';
@@ -61,7 +62,7 @@ export default function App() {
   }
 
   const renderResultsData = () => {
-   
+    let displayComment;
     const mapAnswers = answers.map(answer => {
       const question = questions.find(
         question => question.id === answer.questionId
@@ -74,10 +75,17 @@ export default function App() {
       )
       });
 
+    if (correctCount < 5) {
+      displayComment = resultComment;
+    } else {
+      displayComment = "You have pleased the badger."
+    }
+
     return (
       <div>
         <h4>Wow, you got {correctCount} correct</h4>
-        {mapAnswers}
+        <h5>{displayComment}</h5>  
+      {mapAnswers}
       </div>
     )
   };
