@@ -106,13 +106,14 @@ body {
 .header-section {
     margin: 3vmin 0 0 0;
     //   position: absolute;
+}
 
-    h2 {
+    .header-section h2 {
         // padding: 2vmin 0;
         font-family: 'Warnes', cursive;
         // font-family: 'Audiowide', cursive;
         font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
-        line-height: calc(28px + (38 - 28) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(32px + (38 - 32) * ((100vw - 300px) / (1800 - 300)));
         letter-spacing: 1px;
         // color: #1673C4;
         color: #fff;
@@ -133,20 +134,20 @@ body {
             animation: neon3 1.0s ease-in-out;
         }
     }
-}
+
 
     h4 {
-        margin: 0 0 1vmin 0;
+        margin: 1vmin 0;
         font-family: 'Roboto', sans-serif;
-        font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
-        line-height: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
+        font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 700;
     }
 
     h5 {
         margin: 0 0 2vmin 0;
         font-family: 'Roboto', sans-serif;
-        font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
+        font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 700;
     }
@@ -163,39 +164,39 @@ body {
 
         @keyframes glow-red {
         from {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff2200, 0 0 20px #ff2200, 0 0 25px #ff2200, 0 0 30px #ff2200, 0 0 35px #ff2200;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff2200, 0 0 15px #ff2200, 0 0 25px #ff2200, 0 0 30px #ff2200, 0 0 35px #ff2200;
         }
         to {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff2200, 0 0 40px #ff2200, 0 0 50px #ff2200, 0 0 60px #ff2200, 0 0 70px #ff2200;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 24px #ff2200, 0 0 28px #ff2200, 0 0 30px #ff2200, 0 0 45px #ff2200, 0 0 55px #ff2200;
         }
         }
 
-        @-webkit-keyframes neon3 {
-            from {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
-            }
-            to {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
-            }
-        }
+        // @-webkit-keyframes neon3 {
+        //     from {
+        //         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+        //     }
+        //     to {
+        //         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+        //     }
+        // }
 
-        @-moz-keyframes neon3 {
-            from {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
-            }
-            to {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
-            }
-        }
+        // @-moz-keyframes neon3 {
+        //     from {
+        //         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+        //     }
+        //     to {
+        //         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+        //     }
+        // }
 
-        @keyframes neon3 {
-            from {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
-            }
-            to {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
-            }
-        }
+        // @keyframes neon3 {
+        //     from {
+        //         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+        //     }
+        //     to {
+        //         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+        //     }
+        // }
 
 
 h2.progress-header {
