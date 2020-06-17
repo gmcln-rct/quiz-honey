@@ -117,8 +117,8 @@ const questionsLibrary = [
     question: "In JavaScript, what is the difference between event.preventDefault() and event.stopPropagation() methods?",
     answer_a: "event.preventDefault() can only be used with controlled components.",
     answer_b: "They are the same.",
-    answer_c: "The event.stopPropagation() method prevents the default behavior of an element. The event.preventDefault() method stops the propogation of an event in the bubbling or capturing phase.",
-    answer_d: "The event.preventDefault() method prevents the default behavior of an element. The event.stopPropagation() method stops the propogation of an event in the bubbling or capturing phase.",
+    answer_c: "The event.stopPropagation() method prevents the default behavior of an element. The event.preventDefault() method stops the propagation of an event in the bubbling or capturing phase.",
+    answer_d: "The event.preventDefault() method prevents the default behavior of an element. The event.stopPropagation() method stops the propagation of an event in the bubbling or capturing phase.",
     correct_answer: "d",
   },
 
@@ -128,7 +128,7 @@ const questionsLibrary = [
     answer_a: "It is the element on which the event occurred or the element that triggered the event.",
     answer_b: "It is the element on which we attach the event handler explicitly.",
     answer_c: "It is the element event that is handled during the current event loop.",
-    answer_d: "It is the parent element of the elment where the event occurred.",
+    answer_d: "It is the parent element of the element where the event occurred.",
     correct_answer: "b",
   },
 
@@ -355,8 +355,8 @@ const questionsLibrary = [
     question: "In JavaScript, explain the difference between '==' and '==='?",
     answer_a: "They are functionally the same.",
     answer_b: "The former checks for equality while the latter checks if value is an Integer.",
-    answer_c: "The former checks only for equality in value whereasthe latter returns false if either the value or the type of the two variables are different.",
-    answer_d: "The former checks only for equality in value whereasthe latter returns true if either the value or the type of the two variables are different.",
+    answer_c: "The former checks only for equality in value whereas the latter returns false if either the value or the type of the two variables are different.",
+    answer_d: "The former checks only for equality in value whereas the latter returns true if either the value or the type of the two variables are different.",
     correct_answer: "c",
   },
   {
