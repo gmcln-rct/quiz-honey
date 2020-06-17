@@ -150,10 +150,9 @@ body {
         margin: 0 0 2vmin 0;
         font-family: 'Roboto', sans-serif;
         font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
-        line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 700;
         font-style: italic;
-
     }
 
     @keyframes glow {
@@ -291,8 +290,11 @@ h1 {
 
     ul {
         margin: 0 4vmin;
+        padding: 3vmin 2vmin;
         font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));;
+        background-color: rgba(50,50,50, 0.8);
+        border-radius: 10px;
     }
 
     span.correct {
