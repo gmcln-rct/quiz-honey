@@ -75,7 +75,7 @@ const questionsLibrary = [
   {
     id: 8,
     question: "What is the difference between window & document in JavaScript?",
-    answer_a: "While window is a global object which holds variables, functions, history,and location, the document comes under the window and can be considered as the property of the window.",
+    answer_a: "While window is a global object, the document comes under the window and can be considered as the property of the window.",
     answer_b: "Document and window both are global objects but document is called at runtime.",
     answer_c: "While document is a global object which holds variables, functions, history,and location, the window comes under the document and can be considered as the property of the document.",
     answer_d: "The window hold variables and functions whereas the document holds history and location of an object.",
