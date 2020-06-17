@@ -134,7 +134,7 @@ const questionsLibrary = [
 
   {
     id: 14,
-    question: "Whis of these statements about var, let and const are not true?",
+    question: "Which of these statements about var, let and const is not true?",
     answer_a: "var declarations are globally scoped or function scoped while letand const are block scoped.",
     answer_b: "var variables can be updated by value and re-declared within their scopes, but let variables cannot be re-declared. const variables can neither be updated nor re-declared.",
     answer_c: "All three of these keywords are hoisted to the top of their scope and are initialized with undefined.",
