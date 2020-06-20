@@ -435,7 +435,7 @@ const questionsLibrary = [
 
   {
     id: 45,
-    question: "Which statment is true about prototypal Inheritance in JavaScript?",
+    question: "Which statment is true about Prototypal Inheritance in JavaScript?",
     answer_a: "Every object has a prototype property, where you can add methods to it and when you create another object from these, the newly created object will automatically inherit its parent’s property.",
     answer_b: "Prototypal inheritance is a way for one object's class to extend another class. ",
     answer_c: "Proptypes inherit from classes and create subclass relationships.",
