@@ -139,6 +139,7 @@ body {
         line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 700;
         font-style: italic;
+        color: #ffc107;
     }
 
     @keyframes glow {
@@ -311,6 +312,14 @@ h1 {
 
 
 // General
+
+#badger-comment {
+    margin: 1vmin 0 1vmin 0;
+    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+    line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+
+    color: #fff;
+}
 
 #no-wrap {
     white-space: nowrap;

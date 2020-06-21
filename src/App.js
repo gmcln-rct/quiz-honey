@@ -85,7 +85,9 @@ export default function App() {
     return (
       <div>
         <h4>You got {correctCount} correct</h4>
-        <h5><span id="badger-comment">Badger says: </span>{displayComment}</h5>  
+        <h5 id="badger-comment">The Badger says: </h5>  
+        <h5>{displayComment}</h5>  
+
         <hr />
         {mapAnswers}
       </div>
