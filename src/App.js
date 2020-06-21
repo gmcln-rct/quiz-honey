@@ -41,6 +41,7 @@ export default function App() {
   };
 
   const [state,dispatch] = useReducer(quizReducer, initialState);
+
   const {currentQuestion, currentAnswer, answers, showResults, error} = state;
 
   // eslint-disable-next-line
@@ -75,24 +76,23 @@ export default function App() {
       )
       });
 
-    if (correctCount < 5) {
-      displayComment = resultComment;
-    } else {
-      displayComment = "You have pleased the badger."
-    }
+      if (correctCount < 5) {
+        displayComment = resultComment;
+      } else {
+        displayComment = "You have pleased the badger."
+      }
 
     return (
       <div>
-        <h4>You got {correctCount} correct</h4>
+        {/* <h4>You got {correctCount} correct</h4>
         <h5>({displayComment})</h5>  
-        <hr />
+        <hr /> */}
         {mapAnswers}
       </div>
     )
   };
 
   const restart = () => {
-    questions = [];
     dispatch({type: RESET_QUIZ});
   }
 
@@ -117,7 +117,6 @@ export default function App() {
       return;
     }
     dispatch({type: SET_SHOW_RESULTS, showResults: true});
-
   };
 
   if (showResults) {
@@ -134,7 +133,6 @@ export default function App() {
       </div>
     )
   } else {
-
     return (
       <QuizContext.Provider value={{ state, dispatch }}>
         <div className="container">
