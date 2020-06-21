@@ -92,6 +92,7 @@ export default function App() {
   };
 
   const restart = () => {
+    questions = [];
     dispatch({type: RESET_QUIZ});
   }
 

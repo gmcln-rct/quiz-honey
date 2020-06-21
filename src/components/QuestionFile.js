@@ -15,9 +15,9 @@ const questionsLibrary = [
   {
     id: 2,
     question: "In React, every time the render method in a react component is called...",
-    answer_a: "every DOM element on the entire page will be re-painted",
-    answer_b: "every DOM element referenced by the React component will be re-painted.",
-    answer_c: "only DOM elements with updated content will be re-painted",
+    answer_a: "Every DOM element on the entire page will be re-painted",
+    answer_b: "Every DOM element referenced by the React component will be re-painted.",
+    answer_c: "Only DOM elements with updated content will be re-painted",
     answer_d: "DOM elements with updated content and any DOM elements refernced by the React component will be re-painted.",
     correct_answer: "c",
   },
