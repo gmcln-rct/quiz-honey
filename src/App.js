@@ -84,16 +84,16 @@ export default function App() {
 
     return (
       <div>
-        {/* <h4>You got {correctCount} correct</h4>
-        <h5>({displayComment})</h5>  
-        <hr /> */}
+        <h4>You got {correctCount} correct</h4>
+        <h5><span id="badger-comment">Badger says: </span>{displayComment}</h5>  
+        <hr />
         {mapAnswers}
       </div>
     )
   };
 
   const restart = () => {
-    dispatch({type: RESET_QUIZ});
+    dispatch({type: RESET_QUIZ}, initialState);
   }
 
   const next = () => {
