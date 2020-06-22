@@ -47,15 +47,17 @@ body {
 
 }
 
-.logo {
-    max-width: 250px;
+.logo  {
+    max-width: 200px;
     height: auto;
-    margin: 2vmin 0 0 0;
+    margin: 5vmin 0 0 0;
 
     z-index: 50;
     // animation: blur 2s ease-in;
     // -webkit-animation: blur 2s ease-in;
     // -moz-animation: blur 2s ease-in;
+
+
 
 }
 
@@ -78,16 +80,20 @@ body {
         -10px 0 80px #f0f,
         10px 0 80px #0ff;
 
-        h3 {
-            margin-top: -10px;
-            font-family: 'Quicksand',sans-serif;
-            font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1800 - 300)));
-            line-height: calc(24px + (26 - 24) * ((100vw - 300px) / (1800 - 300)));
-            font-weight: 700;
-            text-decoration: none;
+    h3 {
+        margin-top: -10px;
+        font-family: 'Quicksand',sans-serif;
+        font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(24px + (26 - 24) * ((100vw - 300px) / (1800 - 300)));
+        font-weight: 700;
+        text-decoration: none;
 
-            animation: glow 1s ease-in-out infinite alternate;
-        }
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    img {
+        opacity: 0.6;
+    }
 }
 
 .header-section {
