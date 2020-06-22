@@ -215,9 +215,9 @@ const questionsLibrary = [
   {
     id: 22,
     question: "What is the difference between classical inheritance and prototypal inheritance?",
-    answer_a: " The first inherits from classes, like a blueprint, while the latter inherits directly from other objects. ",
+    answer_a: "The first inherits from classes, like a blueprint, while the latter inherits directly from other objects. ",
     answer_b: "Class inheritance always instatiated using a factory function.",
-    answer_c: " The first inherits from objects, like a blueprint, while the second inherits from prototypal classes.",
+    answer_c: "The first inherits from objects, like a blueprint, while the second inherits from prototypal classes.",
     answer_d: "Unlike the former, the latter is typically instantiated via constructor functions with the `new` keyword. ",
     correct_answer: "a",
   },
