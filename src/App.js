@@ -78,7 +78,7 @@ export default function App() {
 
       if (correctCount < 5) {
         displayComment = resultComment;
-      } else {
+      } else {/
         displayComment = "You have pleased the badger."
       }
 
@@ -94,7 +94,7 @@ export default function App() {
   };
 
   const restart = () => {
-    dispatch({type: RESET_QUIZ}, initialState);
+    dispatch({type: RESET_QUIZ});
   }
 
   const next = () => {
