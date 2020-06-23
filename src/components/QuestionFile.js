@@ -135,7 +135,7 @@ const questionsLibrary = [
   {
     id: 14,
     question: "Which of these statements about var, let and const is not true?",
-    answer_a: "var declarations are globally scoped or function scoped while letand const are block scoped.",
+    answer_a: "var declarations are globally scoped or function scoped while let and const are block scoped.",
     answer_b: "var variables can be updated by value and re-declared within their scopes, but let variables cannot be re-declared. const variables can neither be updated nor re-declared.",
     answer_c: "All three of these keywords are hoisted to the top of their scope and are initialized with undefined.",
     answer_d: "While var and let can be declared without being initialized, const must be initialized during declaration.",
@@ -389,7 +389,7 @@ const questionsLibrary = [
 
   {
     id: 40,
-    question: "In JavaScript, which of the following is not a state in Promises?",
+    question: "In JavaScript, which of the following is not a Promise state?",
     answer_a: "fulfilled",
     answer_b: "rejected",
     answer_c: "settled",
