@@ -8,7 +8,7 @@ import Answers from './components/Answers';
 
 import QuizContext from './context/QuizContext';
 
-import {questionSet, quizResultsCount } from "./components/QuestionFile";
+import {questionSet } from "./components/QuestionFile";
 import { resultComment } from "./components/ResultComments";
 
 
@@ -29,9 +29,6 @@ export default function App() {
   let questions = questionSet;
   let correctCount = 0;
   let displayComment;
-
-
-  // let questions = questionsLibrary;
 
   const initialState = {
     questions,
@@ -64,16 +61,17 @@ export default function App() {
     return <span className="failed" id="nowrap">Utter Failure</span> 
   }
 
-  const createDisplayCommennt = () => {
+  const createDisplayComment = () => {
     if (correctCount < 5) {
       displayComment = resultComment;
     } else {
       displayComment = "You have pleased the badger."
     }
+    return displayComment;
   }
 
   const renderResultsData = () => {
-    
+    let comment = createDisplayComment();
     const mapAnswers = answers.map(answer => {
       const question = questions.find(
         question => question.id === answer.questionId
@@ -89,8 +87,7 @@ export default function App() {
     return (
       <div>
         <h4>You got {correctCount} correct. The Badger says:</h4>
-        <h5>{createDisplayCommennt()}</h5>  
-
+        <h5>{comment}</h5>  
         <hr />
         {mapAnswers}
       </div>
@@ -126,6 +123,7 @@ export default function App() {
 
   if (showResults) {
     return (
+      <QuizContext.Provider value={{ state, dispatch }}>
       <div className="container results">
         <Logo />
         <Headline />
@@ -136,6 +134,8 @@ export default function App() {
           Start New Quiz
           </button>
       </div>
+            </QuizContext.Provider >
+
     )
   } else {
     return (
