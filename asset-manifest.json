@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.919aaea0.chunk.css",
-    "main.js": "/static/js/main.a1c504f7.chunk.js",
-    "main.js.map": "/static/js/main.a1c504f7.chunk.js.map",
+    "main.css": "/static/css/main.8f09cce5.chunk.css",
+    "main.js": "/static/js/main.2c880834.chunk.js",
+    "main.js.map": "/static/js/main.2c880834.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.82454778.js",
     "runtime-main.js.map": "/static/js/runtime-main.82454778.js.map",
     "static/js/2.b69e89f2.chunk.js": "/static/js/2.b69e89f2.chunk.js",
     "static/js/2.b69e89f2.chunk.js.map": "/static/js/2.b69e89f2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a097cbe1a147568b33b80b6c8aca45fe.js": "/precache-manifest.a097cbe1a147568b33b80b6c8aca45fe.js",
+    "precache-manifest.12a110db6330e29e55b83945524f495b.js": "/precache-manifest.12a110db6330e29e55b83945524f495b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.919aaea0.chunk.css.map": "/static/css/main.919aaea0.chunk.css.map",
+    "static/css/main.8f09cce5.chunk.css.map": "/static/css/main.8f09cce5.chunk.css.map",
     "static/js/2.b69e89f2.chunk.js.LICENSE.txt": "/static/js/2.b69e89f2.chunk.js.LICENSE.txt",
     "static/media/quiz-badger-logo.png": "/static/media/quiz-badger-logo.3ee9ec14.png"
   },
   "entrypoints": [
     "static/js/runtime-main.82454778.js",
     "static/js/2.b69e89f2.chunk.js",
-    "static/css/main.919aaea0.chunk.css",
-    "static/js/main.a1c504f7.chunk.js"
+    "static/css/main.8f09cce5.chunk.css",
+    "static/js/main.2c880834.chunk.js"
   ]
 }
