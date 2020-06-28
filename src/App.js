@@ -123,7 +123,6 @@ export default function App() {
 
   if (showResults) {
     return (
-      <QuizContext.Provider value={{ state, dispatch }}>
       <div className="container results">
         <Logo />
         <Headline />
@@ -134,7 +133,6 @@ export default function App() {
           Start New Quiz
           </button>
       </div>
-            </QuizContext.Provider >
 
     )
   } else {
