@@ -149,7 +149,6 @@ export default function App() {
           <button className="btn btn-primary" onClick={next}>
             Confirm and continue
           </button>
-    
         </div>
       </QuizContext.Provider>
     );
