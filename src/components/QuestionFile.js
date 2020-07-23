@@ -4,7 +4,7 @@ export const quizResultsCount = 0;
 const questionsLibrary = [
   {
     id: 1,
-    question: "When running a JavaScript function, what is the difference between scope and context?",
+    question: "In a JavaScript function, what is the difference between scope and context?",
     answer_a: "Scope is the object that `this` refers to. Context is the environment that the function is written in.",
     answer_b: "Scope refers to the availability of variables while running. The object within which the function runs is the context. ",
     answer_c: "Scope refers to the receiver of a function. Context refers to the variables that are available in that scope.",
@@ -255,8 +255,8 @@ const questionsLibrary = [
   {
     id: 26,
     question: "In CSS, what is the difference between the usage of an ID and a Class?",
-    answer_a: "An ID is a collective way to identify an element.",
-    answer_b: "ID and Class are both collective ways to identify a DOM element.",
+    answer_a: "An ID is a collective way to identify multiple elements.",
+    answer_b: "ID and Class are both collective ways to identify DOM elements.",
     answer_c: "ID's are not unique and multiple elements can have the same ID.",
     answer_d: "Classes are not unique and multiple elements can have the same class.",
     correct_answer: "d",
@@ -274,7 +274,7 @@ const questionsLibrary = [
 
   {
     id: 28,
-    question: "How many numbers are used to calculate CSS specificity?",
+    question: "How many factors are used to calculate CSS specificity?",
     answer_a: "2",
     answer_b: "3",
     answer_c: "4",
@@ -287,8 +287,8 @@ const questionsLibrary = [
     question: "In CSS, name three types of selectors?",
     answer_a: "ID, tag, Class",
     answer_b: "ID-tag, Class, Name",
-    answer_c: "Descendant Combinator, ID, Pseudo-Descendant",
-    answer_d: "Descendant Combinator, ID, Pseudo-Class",
+    answer_c: "SelectAll, ID, Pseudo-Descendant",
+    answer_d: "Attribute, ID, Class",
     correct_answer: "d",
   },
 
@@ -374,7 +374,7 @@ const questionsLibrary = [
     answer_a: "They are functionally the same.",
     answer_b: "visibility:hidden removes the element from the DOM and does not show it to the user. display:none displays nothing and will not be available in the DOM.",
     answer_c: "visibility:hidden neither occupies the space nor is displayed to the user. display:none will not be available in the DOM but can display.",
-    answer_d: "visibility:hidden keeps the element in the page but does not show it to the user. display:none will not be available in the DOM.",
+    answer_d: "visibility:hidden keeps the element in the DOM but does not show it to the user. display:none will not be available in the DOM.",
     correct_answer: "d",
   },
   {
