@@ -9,13 +9,16 @@
 
 html {
     // margin: 0;
+        background-color: #9B005E;
+
 }
 
 body {
 
     // height: 100vh;
         height: 100%;
-               background: #61045F;  /* fallback for old browsers */
+        // background: #61045F;  /* fallback for old browsers */
+
 
 }
 
@@ -40,7 +43,7 @@ body {
 
     color: white;
     text-align: center;
-    background-color: #aa076ccb;
+    // background-color: #aa076ccb;
     
     // background: #AA076B;  /* fallback for old browsers */
     // background: -webkit-linear-gradient(to top, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
@@ -61,7 +64,7 @@ body {
 }
 
 .logo-section {
-    margin: 2vmin 0 2vmin 0;
+    margin: 3vmin 0 2vmin 0;
     top: calc(50% - 150px);
     left: calc(50% - 150px);
     width: 250px;
@@ -78,14 +81,14 @@ body {
         10px 0 80px #0ff;
 
     h3 {
-        margin-top: -10px;
+        margin-top: 0;
         font-family: 'Quicksand',sans-serif;
-        font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1800 - 300)));
+        font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
         line-height: calc(24px + (26 - 24) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 700;
         text-decoration: none;
 
-        color: #0DB1DB;
+        color: white;
 
         // animation: glow 1s ease-in-out infinite alternate;
     }
