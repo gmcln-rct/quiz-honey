@@ -37,6 +37,7 @@ export default function quizReducer(state, action) {
         case RESET_QUIZ:
             return {
                 ...state,
+                questions: action.questions,
                 answers: [],
                 currentQuestion: 0,
                 currentAnswer: '',
