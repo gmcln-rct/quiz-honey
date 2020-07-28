@@ -8,7 +8,7 @@ import Answers from './components/Answers';
 
 import QuizContext from './context/QuizContext';
 
-import {questionSet, createQuestionSet, questionsLibrary } from "./components/QuestionFile";
+import {questionSet} from "./components/QuestionFile";
 import { resultComment } from "./components/ResultComments";
 
 
@@ -26,10 +26,8 @@ import quizReducer from './reducers/QuizReducer';
 
 export default function App() {
 
-   
-
-  // let questions = questionSet;
-  let questions = createQuestionSet(questionsLibrary);
+  let questions = questionSet;
+  // let questions = createQuestionSet(questionsLibrary);
   let correctCount = 0;
   let displayComment;
 

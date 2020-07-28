@@ -1,7 +1,7 @@
 export const quizResultsCount = 0;
 
 
-export const questionsLibrary = [
+const questionsLibrary = [
   {
     id: 1,
     question: "In a JavaScript function, what is the difference between scope and context?",
@@ -445,24 +445,23 @@ export const questionsLibrary = [
 ];
 
 
- export const createQuestionSet = (questions) => {
+function createQuestionSet (questions) {
 
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
 
-      let questionSet = [];
+      let newQuestionSet = [];
       let questionsLength = questions.length;
-      while (questionSet.length < 5) {
+      while (newQuestionSet.length < 5) {
         let randNum = getRandomInt(questionsLength);
     
-        if (!questionSet.includes(questions[randNum])) {
-          questionSet.push(questionsLibrary[randNum]);
+        if (!newQuestionSet.includes(questions[randNum])) {
+          newQuestionSet.push(questionsLibrary[randNum]);
         }
       }
-      return questionSet;
+      return newQuestionSet;
 }
-
 
 export const questionSet = createQuestionSet(questionsLibrary);
 
