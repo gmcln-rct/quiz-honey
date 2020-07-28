@@ -39,7 +39,7 @@ export default function App() {
     error: '',
   };
 
-  const [state,dispatch] = useReducer(quizReducer, initialState);
+  const [state, dispatch] = useReducer(quizReducer, initialState);
 
   const {currentQuestion, currentAnswer, answers, showResults, error} = state;
 
