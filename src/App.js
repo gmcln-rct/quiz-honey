@@ -8,7 +8,7 @@ import Answers from './components/Answers';
 
 import QuizContext from './context/QuizContext';
 
-import {questionSet} from "./components/QuestionFile";
+import {questionsLibrary} from "./components/QuestionFile";
 import { resultComment } from "./components/ResultComments";
 
 
@@ -26,10 +26,29 @@ import quizReducer from './reducers/QuizReducer';
 
 export default function App() {
 
-  let questions = questionSet;
   // let questions = createQuestionSet(questionsLibrary);
   let correctCount = 0;
   let displayComment;
+  
+  const createQuestionSet = (questions) => {
+    
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+    
+    let newQuestionSet = [];
+    let questionsLength = questions.length;
+    while (newQuestionSet.length < 5) {
+      let randNum = getRandomInt(questionsLength);
+      
+      if (!newQuestionSet.includes(questions[randNum])) {
+        newQuestionSet.push(questionsLibrary[randNum]);
+      }
+    }
+    return newQuestionSet;
+  };
+
+  let questions = createQuestionSet(questionsLibrary);
 
   const initialState = {
     questions,
@@ -40,6 +59,7 @@ export default function App() {
     error: '',
   };
 
+ 
   const [state, dispatch] = useReducer(quizReducer, initialState);
 
   const {currentQuestion, currentAnswer, answers, showResults, error} = state;
@@ -96,7 +116,7 @@ export default function App() {
   };
 
   const restart = () => {
-    dispatch({type: RESET_QUIZ, question: questionSet});
+    dispatch({type: RESET_QUIZ});
   }
 
   const next = () => {
